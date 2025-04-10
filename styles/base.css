@@ -53,13 +53,13 @@ body {
 	animation: loaderAnim 0.7s linear infinite alternate forwards;
 
 }
-
+/* 
 @keyframes loaderAnim {
 	to {
 		opacity: 1;
 		transform: scale3d(0.5,0.5,1);
 	}
-}
+} */
 
 
 main {
@@ -472,7 +472,7 @@ main {
 	opacity: 0.7;
 }
 
-.gallery--switch.gallery--stack-scale .gallery__item:nth-child(2) {
+/* .gallery--switch.gallery--stack-scale .gallery__item:nth-child(2) {
 	transform: scale(0.98);
 }
 
@@ -490,7 +490,7 @@ main {
 
 .gallery--switch.gallery--stack-scale .gallery__item:nth-child(6) {
 	transform: scale(0.9);
-}
+} */
 
 .gallery--gridtiny {
 	display: grid;
@@ -606,12 +606,12 @@ main {
 
 .gallery--grid10 {
 	display: grid;
-	grid-template-columns: repeat(2,1fr);
+	grid-template-columns: repeat(3,2fr);
 	gap: 2vw;
 }
 
 .gallery--switch.gallery--grid10 {
-	grid-template-columns: 1fr 300px 1fr;
+	grid-template-columns: 1fr 600px 1fr;
 	grid-template-rows: 1fr 60vh 1fr;
 	grid-gap: 0;
 }
@@ -638,16 +638,6 @@ main {
 }
 
 @media screen and (min-width: 53em) {
-	.frame {
-		grid-template-columns: auto auto auto 1fr;
-		grid-template-areas: 'title prev ... sponsor';
-		align-content: space-between;
-		justify-items: start;
-		grid-gap: 2rem;
-	}
-	.frame__demos {
-		justify-self: end;
-	}
 	.project--intro {
 		grid-template-columns: auto 1fr;
 		grid-template-areas: 'label-name name' 
@@ -672,15 +662,15 @@ main {
 		column-gap: 2rem; */
 	}
 	.gallery--grid10 {
-		grid-template-columns: repeat(10,1fr);
-		grid-template-rows: repeat(4,1fr);
+		grid-template-columns: repeat(4,1fr);
+		grid-template-rows: repeat(2,1fr);
 	}
 	.gallery--grid10:not(.gallery--switch) .pos-1 { grid-area: 1 / 1; }
 	.gallery--grid10:not(.gallery--switch) .pos-2 { grid-area: 1 / 2; }
 	.gallery--grid10:not(.gallery--switch) .pos-3 { grid-area: 1 / 4; }
-	.gallery--grid10:not(.gallery--switch) .pos-4 { grid-area: 1 / 5; }
-	.gallery--grid10:not(.gallery--switch) .pos-5 { grid-area: 3 / 6; }
-	.gallery--grid10:not(.gallery--switch) .pos-6 { grid-area: 1 / 7; }
+	.gallery--grid10:not(.gallery--switch) .pos-4 { grid-area: 2 / 1; }
+	.gallery--grid10:not(.gallery--switch) .pos-5 { grid-area: 2 / 3; }
+	.gallery--grid10:not(.gallery--switch) .pos-6 { grid-area: 2 / 4; }
 	.gallery--grid10:not(.gallery--switch) .pos-7 { grid-area: 1 / 9; }
 	.gallery--grid10:not(.gallery--switch) .pos-8 { grid-area: 3 / 10; }
 	.gallery--grid10:not(.gallery--switch) .pos-9 { grid-area: 2 / 8; }
@@ -709,53 +699,6 @@ main {
 
 
 
-
-
-
-
-
-/*SCROLL HORIZONTAL*/
-.horizontalScroll .pin-wrap, .horizontalScroll .animation-wrap {
-    display: flex;
-    flex-wrap: nowrap;
-}
-.horizontalScroll .item {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    padding: 0;
-}
-.horizontalScroll figure {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    height: 100vh;
-}
-.horizontalScroll figure img {
-    width: inherit;
-    max-height: 90%;
-    margin: auto 0;
-    display: flex;
-    align-items: flex-end;
-}
-.horizontal-section-1 .item:first-child {
-    margin-left: 5vw;
-}
-
-
-
-
-
-
-/** SECTION BLOCK 2**/
-.gallery__item {
-	overflow: hidden;
-}
-#gallery-1 video {
-    position: absolute;
-    object-fit: cover;
-    height: 100%;
+#gallery-2 .gallery__item-inner {
+    transform: scale(1) !important;
 }

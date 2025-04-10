@@ -1,5 +1,4 @@
 import { Geist, Geist_Mono } from "next/font/google";
-import "../styles/hero.css";
 import "../styles/base.css";
 
 export const metadata = {

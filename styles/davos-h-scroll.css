@@ -1,0 +1,176 @@
+/*SCORLL HORINZONTAL 2 > CONTENIDO*/
+#davosSection {
+    padding-left: 8vw;
+}
+.sh2-content-1 {
+    align-items: center;
+}
+.title-whales {
+    width: 480px;
+    text-align: left;
+    top: 20vh;
+    left: 4vw;
+    position: absolute;
+}
+.title-whales h1 {
+    font-size: 29px;
+    line-height: 26px;
+    font-weight: bold;
+    font-family: 'helvetica_neue65_medium';
+}
+.content-whales {
+    width: 131vw;
+}
+.whales {
+    position: absolute;
+    width: 30vw;
+    height: 35vh;
+    display: flex;
+    align-items: center;
+}
+.whales img {
+    width: 100%;
+    max-width: inherit!important;
+}
+.whale-1 {
+    top: 45vh;
+    left: 10vw;
+    width: 25vw;
+}
+.whale-2 {
+    top: 65vh;
+    left: 24vw;
+    width: 22vw;
+}
+.whale-3 {
+    top: 20vh;
+    left: 45vw;
+    width: 20vw;
+}
+.whale-4 {
+    top: 70vh;
+    left: 53vw;
+    width: 15vw;
+}
+.whale-5 {
+    top: 42vh;
+    left: 67vw;
+    width: 40vw;
+}
+.whale-6 {
+    top: 0vh;
+    left: 93vw;
+    width: 17vw;
+}
+.whale-7 {
+    top: 68vh;
+    left: 100vw;
+    width: 15vw;
+}
+.whale-8 {
+    top: 30vh;
+    left: 107vw;
+}
+
+
+.poster-1 {
+    height: 100vh;
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+}
+.poster-1 img {
+    height: 100%;
+    margin-top: -2rem;
+}
+.sh2-content-2 video {
+    max-width: inherit!important;
+    height: 100%;
+    width: auto;
+}
+
+
+.item-sh2-3-1 {
+  width: auto;
+  height: 100vh;
+}
+.item-sh2-3-1 {
+    max-width: inherit!important;
+    height: 100%;
+    width: auto;
+}
+
+.sh2-content-3 {
+    position: relative;
+}
+.item-sh2-3-2 {
+    height: 70vh;
+    width: 100%;
+    margin: auto -5vw;
+    z-index: 1;
+    border-radius: 25px;
+}
+
+.sh2-content-4 {
+    position: relative;
+}
+.item-sh2-4-2 {
+    position: absolute;
+    width: 40vw;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 1;
+    height: auto;
+    top: 34vh;
+    left: 15vw;
+}
+.sh2-content-4 img {
+    height: 100vh;
+    width: 100%;
+}
+
+
+.sh2-content-5 img {
+    height: 100vh;
+    width: 100%;
+}
+
+.space {
+    width: 50vw;
+}
+
+
+
+.whale-move {
+    transition: all 2s ease;
+}
+.move-itemLeft {
+    opacity: 0;
+    transform: translate(14vw, 0);
+}
+.active-moveLeft {
+    transition: all 2s ease;
+    opacity: 9;
+    transform: translate(0, 1vh);
+}
+
+.move-itemRight {
+    opacity: 0;
+    transform: translate(-14vw, 0);
+}
+.active-itemRight {
+    transition: all 2s ease;
+    opacity: 9;
+    transform: translate(0, 0);
+}
+
+/* .move-itemTop {
+    opacity: 0;
+    transform: translate(0, 12vh);
+}
+.active-itemTop {
+    transition: all 2s ease;
+    opacity: 9;
+    transform: translate(0, 0);
+} */

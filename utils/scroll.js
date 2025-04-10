@@ -75,8 +75,9 @@ export const scroll = () => {
   const galleries = [
     { id: '#gallery-1', options: { flip: { absoluteOnLeave: true, scale: false } } },
     { id: '#horizontal-1', type: 'horizontal' },
-    { id: '#gallery-2' },
     { id: '#gallery-3', options: { flip: { absolute: true, scale: false }, scrollTrigger: { start: 'center center', end: '+=900%' }, stagger: 0.05 } },
+
+    { id: '#gallery-2' },
     { id: '#horizontal-2', type: 'horizontal' },
     { id: '#gallery-4' },
     { id: '#gallery-5' },

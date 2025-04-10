@@ -16,7 +16,20 @@ export function SectionBlock4() {
                     <div className="gallery__item gallery__item-cut"><div className="gallery__item-inner" style={{ backgroundImage: 'url(img/7.jpg' }}></div></div>
                     <div className="gallery__item gallery__item-cut"><div className="gallery__item-inner" style={{ backgroundImage: 'url(img/15.jpg' }}></div></div>
                     <div className="gallery__item gallery__item-cut"><div className="gallery__item-inner" style={{ backgroundImage: 'url(img/9.jpg' }}></div></div>
-                    <div className="gallery__item gallery__item-cut"><div className="gallery__item-inner" style={{ backgroundImage: 'url(img/12.jpg' }}></div></div>
+                    <div className="gallery__item gallery__item-cut">
+                      <div className="gallery__item-inner">
+                        <video
+                            width="100%"
+                            autoPlay
+                            playsInline
+                            muted
+                            loop
+                            preload="metadata"
+                            >
+                            <source src="content/wow-tableau/01.mp4" type="video/mp4" />
+                        </video>
+                      </div>
+                    </div>
                     <div className="gallery__item gallery__item-cut"><div className="gallery__item-inner" style={{ backgroundImage: 'url(img/14.jpg' }}></div></div>
                     <div className="gallery__item gallery__item-cut"><div className="gallery__item-inner" style={{ backgroundImage: 'url(img/10.jpg' }}></div></div>
                     <div className="gallery__item gallery__item-cut"><div className="gallery__item-inner" style={{ backgroundImage: 'url(img/13.jpg' }}></div></div>

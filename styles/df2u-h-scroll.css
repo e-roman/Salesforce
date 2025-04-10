@@ -1,0 +1,410 @@
+/*SCROLL HORIZONTAL*/
+.horizontal-scroll {
+    overflow: hidden;
+    width: 800%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.horizontal-scroll .pin-wrap,
+.horizontal-scroll .animation-wrap {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.horizontal-scroll .item {
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+    position: relative;
+    box-sizing: border-box;
+    padding: 0;
+}
+.horizontal-scroll figure {
+    padding: 0;
+    margin: 0;
+    /* margin: auto; */
+    display: flex;
+    /* align-items: center; */
+    height:100vh;
+}
+.horizontal-scroll figure img {
+    width: inherit;
+    /* height: auto; */
+    /* margin: auto; */
+    /* display: flex; */
+    /* align-items: end; */
+}
+
+.horizontal-scroll .item.space-vw {
+    width: 30vw;
+}
+
+
+/*SCORLL HORINZONTAL 1 > CONTENIDO*/
+.horizontal-section-1 .item:first-child {
+    margin-left: 49.55vw;
+}
+.box-radius {
+    overflow: hidden;
+    border-radius: 12px;
+}
+.d_center {
+    height: 100vh;
+    display: flex;
+}
+
+
+@media (min-width: 1980px) {
+    .horizontal-section-1 .item:first-child {
+        margin-left: 49.85vw;
+    }
+}
+
+
+
+/*content box 1*/
+.content-1 {
+    width: 55vw;
+    position: relative;
+}
+.item-float-s1 {
+    position: absolute;
+    left: -20px;
+    top: -11vh;
+    height: 110px;
+    width: auto;
+    z-index: 2;
+}
+.d-elements-anim {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    height: 14vh;
+}
+.h-100 {
+    height: 95%;
+}
+.an-delay {
+    animation-delay: 2s;
+}
+
+
+
+
+.box-content {
+    position: relative;
+    z-index: 1;
+    margin: auto 0;
+}
+.content-1 .item-s1-1 {
+    position: relative;
+    margin: auto 0;
+    display: flex;
+    overflow: hidden;
+}
+.content-1 .item-s1-1 video {
+    margin-left: -33vw;
+    height: 78vh;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+.content-1 .item-s1-2 {
+    position: absolute;
+    overflow: hidden;
+    height: 33vh;
+    width: 30vw;
+    top: -13vh;
+    left: 27vw;
+    z-index: 1;
+}
+.content-1 .item-s1-2 video {
+    width: 100%;
+}
+
+.content-1 .item-s1-3 {
+    position: absolute;
+    overflow: hidden;
+    height: 33vh;
+    width: 30vw;
+    bottom: -13vh;
+    left: 25vw;
+    z-index: 1;
+}
+.content-1 .item-s1-3 video {
+    width: 100%;
+}
+
+
+
+.item-float-s2 {
+    position: absolute;
+    right: -23vw;
+    width: 40vw;
+    bottom: 0vh;
+}
+.item-float-s2 img {
+    width: 100%;
+}
+
+div#bird\ container {width:90%;margin:0 auto}
+
+
+
+.item-move {
+    transition: all 2s ease;
+}
+.custom-class1 {
+    opacity: 0;
+    transform: translate(14vw, 0);
+}
+.active-class1 {
+    transition: all 2s ease;
+    opacity: 9;
+    transform: translate(0, 1vh);
+}
+
+.custom-class2 {
+    opacity: 0;
+    transform: translate(-14vw, 0);
+}
+.active-class2 {
+    transition: all 2s ease;
+    opacity: 9;
+    transform: translate(0, 0);
+}
+
+.custom-class3 {
+    opacity: 0;
+    transform: translate(0, 12vh);
+}
+.active-class3 {
+    transition: all 2s ease;
+    opacity: 9;
+    transform: translate(0, 0);
+}
+
+
+
+
+/*content box 2*/
+figure.content-2 {
+    display: block;
+    width: 65vw;
+    position: relative;
+    height: 100vh;
+    align-items: center;
+}
+.content-2 .item-s2-1 {
+    position: absolute;
+    z-index: 1;
+    height: 43vh;
+    top: 1vh;
+    left: 28vw;
+}
+.content-2 .item-s2-1 video {
+    height: 100%;
+}
+
+.content-2 .item-s2-2 {
+    position: absolute;
+    z-index: 1;
+    height: 43vh;
+    bottom: 0;
+    left: 15vw;
+}
+.content-2 .item-s2-2 video {
+    height: 100%;
+}
+
+
+
+
+
+
+/*content box 3*/
+figure.content-3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 160vw;
+    position: relative;
+    padding: 0 20vw;
+}
+.content-3 .box-s3 {
+    width: 33.333%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content-3 .box-s3 h6 {
+    font-size: 1rem;
+}
+.content-3 .box-s3 img {
+    width: 100%;
+    margin-top: 3rem;
+}
+.content-3 .box-s3-1 {
+    width: 25%;
+}
+.content-3 .box-s3-2 {
+    width: 28%;
+    margin-left: -7rem;
+}
+.content-3 .box-s3-3 {
+    width: 28%;
+}
+.line-s3 {
+    position: absolute;
+    top: 35vh;
+    width: 100%;
+    background: #FFF;
+    right: 0;
+    height: 1px;
+}
+
+.line-s3.item-circle .linehzl-elem-1 {
+  stroke-dashoffset: 2019px;
+  stroke-dasharray: 2019px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s;
+}
+.line-s3.item-circle.active .linehzl-elem-1 {
+  stroke-dashoffset: 0;
+}
+
+
+@media (min-width:1980px) {
+    .content-3 .box-s3 h6 {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+
+/*content box 4*/
+.content-4 img {
+    height: 100%;
+    max-width: inherit!important;
+    width: auto;
+}
+
+/*content box 5*/
+figure.content-5 {
+    position: relative;
+    padding: 0 2rem;
+    width: 70vw;
+}
+.item-s5-float {
+    position: absolute;
+    z-index: 1;
+    left: -12vw;
+    width: 35vw;
+    bottom: -5vh;
+}
+.item-s5-1 {
+    margin-top: auto;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.item-s5-1 img {
+}
+
+
+
+/*content box 6*/
+figure.content-6 {
+    position: relative;
+    width: 70vw;
+}
+.content-6 .item-s6-1 {
+    display: flex;
+    align-items: center;
+}
+
+
+
+/*content box 7*/
+figure.content-7 {
+    position: relative;
+    margin-left: -15vw;
+    z-index: -1;
+}
+figure.content-7 img {
+    max-width: inherit!important;
+    height: 100%;
+    width: auto;
+} 
+
+
+
+
+/*content box 8*/
+figure.content-8 {
+    position: relative;
+}
+figure.content-8 img {
+    max-width: inherit!important;
+    height: 100%;
+    width: auto;
+} 
+
+
+/*content box 9*/
+figure.content-9 {
+}
+.item-s9-1 {
+    height: 80vh;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: auto auto auto -5vw;
+    display: block;
+}
+.item-s9-1 video {
+    height: 100%;
+}
+
+
+
+
+.line-2 {
+    width: 1px;
+    margin: 0 auto;
+    height: 100%;
+    display: inline-block;
+    left: -2px;
+    top: 11vh;
+    background-color: #FFF;
+    opacity: .8;
+    position: absolute;
+    z-index: 2;
+}
+.line-2 img {
+    width: 100%;
+    height: 100%;
+}
+.line-3 {
+    width: 400px;
+    height: 3px;
+    margin: 0 auto;
+    display: inline-block;
+    left: -2px;
+    bottom: 13%;
+    position: absolute;
+    background-color: #FFF;
+}

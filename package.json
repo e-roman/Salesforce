@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@lottiefiles/lottie-player": "^2.0.12",
     "gsap": "^3.12.7",
     "imagesloaded": "^5.0.0",
     "lenis": "^1.2.3",
