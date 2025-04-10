@@ -1,0 +1,11 @@
+export { HeroIniit } from './HeroIniit';
+export { SectionBlock1 } from './SectionBlock1';
+export { SectionBlock2 } from './SectionBlock2';
+export { SectionBlock3 } from './SectionBlock3';
+export { SectionBlock4 } from './SectionBlock4';
+export { SectionBlock5 } from './SectionBlock5';
+export { SectionBlock6 } from './SectionBlock6';
+export { SectionBlock7 } from './SectionBlock7';
+export { SectionBlock8 } from './SectionBlock8';
+export { SectionBlock9 } from './SectionBlock9';
+export { SectionBlock10 } from './SectionBlock10';
