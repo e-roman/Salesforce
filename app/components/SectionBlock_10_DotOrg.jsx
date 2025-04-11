@@ -11,7 +11,7 @@ export function SectionBlockDotOrg() {
 
   return (
     <>
-      <section className="horizontalScroll" id="horizontal-3">
+      <section className="horizontalScroll" id="section-DotOrg">
         <div className="horizontal-section-3">
           <div className="pin-wrap">
             <div className="animation-wrap to-right">

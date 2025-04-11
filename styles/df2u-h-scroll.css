@@ -1,3 +1,7 @@
+
+
+
+
 /*SCROLL HORIZONTAL*/
 .horizontal-scroll {
     overflow: hidden;
@@ -41,6 +45,45 @@
     /* display: flex; */
     /* align-items: end; */
 }
+
+
+/*SCROLL HORIZONTAL*/
+.horizontalScroll .pin-wrap, .horizontalScroll .animation-wrap {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.horizontalScroll .item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0;
+}
+.horizontalScroll figure {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+}
+.horizontalScroll figure img {
+    width: inherit;
+    /* max-height: 90%;
+    /* margin: auto 0; */
+    display: flex;
+    /* align-items: flex-end; */
+}
+.horizontal-section-1 .item:first-child {
+    margin-left: 5vw;
+}
+
+.m-auto-w90 {
+    margin: auto;
+    max-width: 90%;
+}
+
+
 
 .horizontal-scroll .item.space-vw {
     width: 30vw;
@@ -249,10 +292,11 @@ figure.content-3 {
 }
 .content-3 .box-s3 h6 {
     font-size: 1rem;
+    margin: 0;
 }
 .content-3 .box-s3 img {
-    width: 100%;
-    margin-top: 3rem;
+    width: 90%;
+    height: 65vh;
 }
 .content-3 .box-s3-1 {
     width: 25%;
@@ -266,7 +310,7 @@ figure.content-3 {
 }
 .line-s3 {
     position: absolute;
-    top: 35vh;
+    top: 20vh;
     width: 100%;
     background: #FFF;
     right: 0;

@@ -17,7 +17,7 @@ export function SectionBlockNightcap() {
 
   return (
     <>
-    <section className="horizontalScroll" id='horizontal-2'>
+    <section className="horizontalScroll" id='section-NightCap'>
     <div className="horizontal-section-2">
     <div className="pin-wrap">
         <div className="animation-wrap to-right">

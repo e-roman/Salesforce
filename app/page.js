@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react';
 import { initSmoothScrolling } from '@/utils/smoothScroll';
-import { scroll } from '@/utils/scroll';
+import { scroll } from '@/utils/scroll.js';
 import { preloadImages } from '@/utils/preloadImages';
 
 

@@ -10,7 +10,7 @@ export function SectionBlockSlack() {
           <span className="project__label project__label--default">Slack Keynote UI<br/>and product features<br/>animations</span>
       </section>
       <div className="gallery-wrap">
-          <div className="gallery gallery--grid10" id="gallery-3">
+          <div className="gallery gallery--grid10" id="section-Slack">
               <div className="gallery__item pos-1" style={{ backgroundImage: 'url(img/16.jpg' }}></div>
               <div className="gallery__item pos-2" style={{ backgroundImage: 'url(img/17.jpg' }}></div>
               <div className="gallery__item pos-3" style={{ backgroundImage: 'url(img/18.jpg' }}></div>

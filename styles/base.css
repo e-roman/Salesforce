@@ -1,4 +1,4 @@
-*,
+.gallery--row .caption*,
 *::after,
 *::before {
 	box-sizing: border-box;
@@ -77,8 +77,22 @@ main {
     grid-column-gap: 7vw;
     grid-row-gap: 0.5rem;
 }
-
-.project--intro {
+.project--intro { 
+    padding: 1rem;
+    max-width: 95vw;
+    margin: 20vh auto;
+    display: flex;
+	flex-direction: column;
+    gap: 0.5rem;
+}
+.project--intro .block-textIntro {
+    max-width: 35vw;
+    margin: 15vh 5vw 0 auto;
+}
+.project--intro .block-textIntro p{
+    font-size: clamp(1rem, 2vw, 1.214rem);
+}
+/* .project--intro {
 	grid-template-columns: 1fr;
 	grid-template-areas: 'label-name' 
 						 'name' 
@@ -88,7 +102,7 @@ main {
 						 'label-mission' 
 						 'mission';
 	
-}
+} */
 
 .project--details {
 	grid-template-areas: 'label-default' 'paragraph';
@@ -224,10 +238,12 @@ main {
 }
 
 .caption {
-	font-size: clamp(1rem, 3vw, 1.75rem);
-	z-index: 101;
-	color: var(--color-caption);
-	font-weight: 400;
+    z-index: 101;
+}
+.caption p {
+    font-size: clamp(1rem, 3vw, 1.35rem);
+    color: var(--color-caption);
+    font-weight: 400;
 }
 
 .gallery--row {
@@ -241,7 +257,7 @@ main {
 
 .gallery--row .gallery__item {
 	width: auto;
-	aspect-ratio: 2 / 3;
+	aspect-ratio: 2 / 2;
 }
 
 .gallery--row .gallery__item--s {
@@ -268,13 +284,13 @@ main {
 
 .gallery--row .caption {
 	position: absolute;
-	width: 100%;
-	height: auto;
-	bottom: -50vh;
-	left: 0;
-	padding: 4.5vw;
-	max-width: 730px;
-	opacity: 0;
+    width: 100%;
+    height: auto;
+    bottom: -25vh;
+    left: 0;
+    padding: 0 4.5vw 0vw 4.5vw;
+    max-width: 600px;
+    opacity: 0;
 }
 
 .gallery--switch.gallery--row .caption {
@@ -701,6 +717,23 @@ main {
 
 
 
+
+
+
+
+
+/** SECTION REEL VIDEO**/
+.gallery__item {
+	overflow: hidden;
+}
+#gallery-1 video {
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+}
+
+
+/** SECTION TABLEAU**/
 #gallery-2 .gallery__item-inner {
     transform: scale(1) !important;
 }

@@ -17,7 +17,7 @@ export function HorizontalScrollDf2u() {
 
   return (
     <>
-      <section className="horizontalScroll" id="horizontal-1">
+      <section className="horizontalScroll" id="section-Df2u-hScroll">
         <div className="horizontal-section-1">
           <div className="pin-wrap">
             <div className="animation-wrap to-right">
