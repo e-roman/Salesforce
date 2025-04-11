@@ -10,7 +10,7 @@ import { initHorizontalScroll } from '@/utils/horizontalScroll';
 // Carga dinámica del componente LottiePlayer
 // const LottiePlayer = dynamic(() => import('@lottiefiles/lottie-player'), { ssr: false });
 
-export function SectionBlockDavos() {
+export function SectionBlockNightcap() {
   useEffect(() => {
     initHorizontalScroll();
   }, []);

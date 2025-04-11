@@ -630,6 +630,8 @@ main {
 	display: grid;
 	place-items: center;
     font-size: clamp(2rem, 8vw, 6rem);
+	text-align: center;
+    line-height: 1;
 }
 
 .gallery--switch.gallery--grid10 .caption {

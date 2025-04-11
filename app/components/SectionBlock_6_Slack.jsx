@@ -7,8 +7,7 @@ export function SectionBlockSlack() {
   return (
     <>
       <section className="project project--details project--right">
-          <span className="project__label project__label--default">Preserving Artistic Identity</span>
-          <p>While AI offers new avenues for artistic exploration, there is a concern that it may overshadow or replace human creativity. Balancing the integration of AI tools and techniques with preserving the unique perspectives, emotional depth, and artistic identity of human artists is a significant challenge. Striking the right balance between AI-generated art and the irreplaceable human touch requires thoughtful consideration and an ongoing dialogue between artists, technologists, and the wider art community.</p>
+          <span className="project__label project__label--default">Slack Keynote UI<br/>and product features<br/>animations</span>
       </section>
       <div className="gallery-wrap">
           <div className="gallery gallery--grid10" id="gallery-3">
@@ -18,7 +17,7 @@ export function SectionBlockSlack() {
               <div className="gallery__item pos-4" style={{ backgroundImage: 'url(img/30.jpg' }}></div>
               <div className="gallery__item pos-5" style={{ backgroundImage: 'url(img/20.jpg' }}></div>
               <div className="gallery__item pos-6" style={{ backgroundImage: 'url(img/21.jpg' }}></div>
-              <div className="caption">The Art of Perfection?</div>
+              <div className="caption">Simplifying, enhancing,<br/>and boosting productivity<br/>through workplace<br/>connections.</div>
           </div>
       </div>
     </>

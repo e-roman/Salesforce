@@ -6,7 +6,7 @@ import { scroll } from '@/utils/scroll';
 import { preloadImages } from '@/utils/preloadImages';
 
 
-import { SectionHero, SectionBlock1, SectionBlockReel, SectionBlockDf2u, HorizontalScrollDf2u, SectionBlockSlack,  SectionBlock4, SectionBlockDavos, SectionBlock7, SectionBlock8, SectionBlock9, SectionBlock10 } from './components';
+import { SectionHero, SectionBlock1, SectionBlockReel, SectionBlockDf2u, HorizontalScrollDf2u, SectionBlockSlack, SectionBlockNightcap, SectionBlockMecedes, SectionBlockTableau, SectionBlockDotOrg, SectionBlock7, SectionBlock8, SectionBlock9, SectionBlock10 } from './components';
 
 export default function Home() {
   useEffect(() => {
@@ -25,8 +25,10 @@ export default function Home() {
       <SectionBlockDf2u />
       <HorizontalScrollDf2u />
       <SectionBlockSlack />
-      <SectionBlock4/>
-      <SectionBlockDavos />
+      <SectionBlockNightcap />
+      <SectionBlockMecedes />
+      <SectionBlockTableau/>
+      <SectionBlockDotOrg/>
       <SectionBlock7 />
       <SectionBlock8 />
       <SectionBlock9 />
