@@ -1,3 +1,6 @@
+.content {
+    position: relative;
+}
 .grid-hero {
 	position: relative;
 	width: 100%;

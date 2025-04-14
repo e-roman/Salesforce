@@ -1,14 +1,17 @@
 'use client';
 
 import "../../styles/dotorg-h-scroll.css";
+
 import { useEffect } from 'react';
 import { initHorizontalScroll } from '@/utils/horizontalScroll';
+import { useSvgAnimations } from '@/hooks/useSvgAnimations';
 
 export function SectionBlockDotOrg() {
+  useSvgAnimations(); 
+  
   useEffect(() => {
     initHorizontalScroll();
   }, []);
-
   return (
     <>
       <section className="horizontalScroll" id="section-DotOrg">

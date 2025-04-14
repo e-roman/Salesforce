@@ -198,7 +198,11 @@
     width: 100%;
 }
 
-div#bird\ container {width:90%;margin:0 auto}
+
+#bird-container {
+    height: 65vh;
+    width: 80%;
+}
 
 
 
@@ -278,9 +282,9 @@ figure.content-3 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 160vw;
+    width: 120vw;
     position: relative;
-    padding: 0 20vw;
+    padding: 0 15vw;
 }
 .content-3 .box-s3 {
     width: 33.333%;

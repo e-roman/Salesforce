@@ -1,4 +1,8 @@
 /*SCORLL HORINZONTAL 3 > CONTENIDO*/
+section#section-Df2u-hScroll {
+    position: relative;
+}
+
 .scroll-hz3 {
     padding-bottom: 15rem;
 }
@@ -172,6 +176,68 @@ figure.sh3-content-2 {
 
 
 
+
+
+
+
+
+/****** CLOUD ****/
+@-webkit-keyframes animate-svg-stroke-cloud-1 {
+    0% {
+      stroke-dashoffset: 358.36566162109375px;
+      stroke-dasharray: 358.36566162109375px;
+    }
+  
+    100% {
+      stroke-dashoffset: 716.7313232421875px;
+      stroke-dasharray: 358.36566162109375px;
+    }
+  }
+  
+  @keyframes animate-svg-stroke-cloud-1 {
+    0% {
+      stroke-dashoffset: 358.36566162109375px;
+      stroke-dasharray: 358.36566162109375px;
+    }
+  
+    100% {
+      stroke-dashoffset: 716.7313232421875px;
+      stroke-dasharray: 358.36566162109375px;
+    }
+  }
+  
+  .dot_top1_svg-1.item-active {
+      opacity: 0;
+  }
+  
+  .dot_top1_svg-1.item-active.active {
+      opacity: 9;
+    -webkit-animation: animate-svg-stroke-cloud-1 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both;
+            animation: animate-svg-stroke-cloud-1 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both;
+  }
+  
+  
+  
+
+  .dot_bgBird_svg-1.item-active .anim-dot-right-1 {
+      opacity: 0;
+  }
+  .dot_bgBird_svg-1.item-active .anim-dot-right-1 {
+       opacity: 9;
+    stroke-dashoffset: 534.6998901367188px;
+    stroke-dasharray: 534.6998901367188px;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s;
+            transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s;
+  }
+  
+  .dot_bgBird_svg-1.item-active.active .anim-dot-right-1 {
+    stroke-dashoffset: 1069.3997802734375px;
+  }
+  
+  
+
+
+
 /****** CLOUD ****/
 @-webkit-keyframes animate-svg-stroke-cloud-1 {
   0% {
@@ -197,11 +263,11 @@ figure.sh3-content-2 {
   }
 }
 
-.dot_top1_svg-1.item-circle {
+.dot_top1_svg-1.item-active {
     opacity: 0;
 }
 
-.dot_top1_svg-1.item-circle.active {
+.dot_top1_svg-1.item-active.active {
     opacity: 9;
   -webkit-animation: animate-svg-stroke-cloud-1 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both;
           animation: animate-svg-stroke-cloud-1 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both;
@@ -211,10 +277,10 @@ figure.sh3-content-2 {
 
 
 
-.dot_bgBird_svg-1.item-circle .anim-dot-right-1 {
+.dot_bgBird_svg-1.item-active .anim-dot-right-1 {
     opacity: 0;
 }
-.dot_bgBird_svg-1.item-circle .anim-dot-right-1 {
+.dot_bgBird_svg-1.item-active .anim-dot-right-1 {
      opacity: 9;
   stroke-dashoffset: 534.6998901367188px;
   stroke-dasharray: 534.6998901367188px;
@@ -222,7 +288,7 @@ figure.sh3-content-2 {
           transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s;
 }
 
-.dot_bgBird_svg-1.item-circle.active .anim-dot-right-1 {
+.dot_bgBird_svg-1.item-active.active .anim-dot-right-1 {
   stroke-dashoffset: 1069.3997802734375px;
 }
 

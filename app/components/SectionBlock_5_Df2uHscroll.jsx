@@ -1,23 +1,34 @@
 'use client';
 
-
 import "../../styles/df2u-h-scroll.css";
 
-// import dynamic from 'next/dynamic';
+import dynamic from 'next/dynamic';
 import { useEffect } from 'react';
 import { initHorizontalScroll } from '@/utils/horizontalScroll';
 
-// Carga dinámica del componente LottiePlayer
-// const LottiePlayer = dynamic(() => import('@lottiefiles/lottie-player'), { ssr: false });
+// Carga dinámica del componente (opcional en este caso, si ya cargás el script manualmente)
+const LottiePlayer = dynamic(() => import('@lottiefiles/lottie-player'), { ssr: false });
 
 export function HorizontalScrollDf2u() {
   useEffect(() => {
+    // Init scroll
     initHorizontalScroll();
+
+    // Inyección del script de Lottie manualmente
+    const script = document.createElement('script');
+    script.src = 'https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js';
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
   }, []);
 
   return (
     <>
       <section className="horizontalScroll" id="section-Df2u-hScroll">
+      <div className="line-Scroll-1 item-active"><svg width="1" height="500" viewBox="0 0 1 500" fill="none" xmlns="http://www.w3.org/2000/svg"><g clipPath="url(#clip0_2_2)"><path d="M0.499972 0L0.499939 500" stroke="white"/></g><defs><clipPath id="clip0_2_2"><rect width="1" height="500" fill="white"/></clipPath></defs></svg></div>
         <div className="horizontal-section-1">
           <div className="pin-wrap">
             <div className="animation-wrap to-right">
@@ -124,15 +135,15 @@ export function HorizontalScrollDf2u() {
                   </div>
                   <div className="box-s3 box-s3-3">
                     <h6>Hummingbird</h6>
-                    <div id="bird-container"></div>
-                    {/* <lottie-player
-                      id="bird-container"
-                      src="/content/bird.json"
-                      background="transparent"
-                      speed="1"
-                      loop
-                      autoplay
-                    ></lottie-player> */}
+                    <div id="bird-container">
+                      <lottie-player
+                        src="content/bird.json"
+                        background="transparent"
+                        speed="1"
+                        loop
+                        autoplay
+                      ></lottie-player>
+                    </div>
                   </div>
                 </figure>
               </div>

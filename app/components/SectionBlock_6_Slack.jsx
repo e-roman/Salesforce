@@ -6,18 +6,75 @@ import { useEffect } from 'react';
 export function SectionBlockSlack() {
   return (
     <>
-      <section className="project project--details project--right">
-          <span className="project__label project__label--default">Slack Keynote UI<br/>and product features<br/>animations</span>
+      <section className="project--details" id="section-Slack_top">
+          <h2 className="title-section font-h2 text-grey text-900 split-lines animate-scroll-each single-line not-split">Slack Keynote UI<br/>and product features<br/>animations</h2>
       </section>
       <div className="gallery-wrap">
           <div className="gallery gallery--grid10" id="section-Slack">
-              <div className="gallery__item pos-1" style={{ backgroundImage: 'url(img/16.jpg' }}></div>
-              <div className="gallery__item pos-2" style={{ backgroundImage: 'url(img/17.jpg' }}></div>
-              <div className="gallery__item pos-3" style={{ backgroundImage: 'url(img/18.jpg' }}></div>
-              <div className="gallery__item pos-4" style={{ backgroundImage: 'url(img/30.jpg' }}></div>
-              <div className="gallery__item pos-5" style={{ backgroundImage: 'url(img/20.jpg' }}></div>
-              <div className="gallery__item pos-6" style={{ backgroundImage: 'url(img/21.jpg' }}></div>
-              <div className="caption">Simplifying, enhancing,<br/>and boosting productivity<br/>through workplace<br/>connections.</div>
+              <div className="gallery__item pos-1">
+                    <video
+                        width="100%"
+                        autoPlay
+                        playsInline
+                        muted
+                        loop
+                        preload="metadata"
+                        >
+                        <source src="content/slack/01.mp4" type="video/mp4" />
+                    </video>
+              </div>
+              <div className="gallery__item pos-2">
+              <video
+                        width="100%"
+                        autoPlay
+                        playsInline
+                        muted
+                        loop
+                        preload="metadata"
+                        >
+                        <source src="content/slack/02.mp4" type="video/mp4" />
+                    </video>
+              </div>
+              <div className="gallery__item pos-3">
+                  <video
+                      className='v-p-right'
+                      width="100%"
+                      autoPlay
+                      playsInline
+                      muted
+                      loop
+                      preload="metadata"
+                      >
+                      <source src="content/slack/06.mp4" type="video/mp4" />
+                  </video>
+              </div>
+              <div className="gallery__item pos-4">
+                  <video
+                      width="100%"
+                      autoPlay
+                      playsInline
+                      muted
+                      loop
+                      preload="metadata"
+                      >
+                      <source src="content/slack/04.mp4" type="video/mp4" />
+                  </video>
+              </div>
+              <div className="gallery__item pos-5"></div>
+              <div className="gallery__item pos-6">
+              <video
+                        className='v-p-right'
+                        width="100%"
+                        autoPlay
+                        playsInline
+                        muted
+                        loop
+                        preload="metadata"
+                        >
+                        <source src="content/slack/03.mp4" type="video/mp4" />
+                    </video>
+              </div>
+              <div className="caption-fixed">Simplifying, enhancing,<br/>and boosting productivity<br/>through workplace<br/>connections.</div>
           </div>
       </div>
     </>

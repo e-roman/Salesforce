@@ -13,7 +13,7 @@ export const triggerFlipOnScroll = (galleryEl, options = {}) => {
     flip: {
       absoluteOnLeave: false,
       absolute: false,
-      scale: true,
+      scale: true, // default
       simple: true,
     },
     scrollTrigger: {
@@ -21,7 +21,7 @@ export const triggerFlipOnScroll = (galleryEl, options = {}) => {
       end: '+=300%',
     },
     stagger: 0,
-    includeCaption: false, // Nuevo flag
+    includeCaption: false,
     ...options,
   };
 
@@ -33,9 +33,12 @@ export const triggerFlipOnScroll = (galleryEl, options = {}) => {
   const elementsToFlip = [...galleryItems];
 
   if (settings.includeCaption) {
-    const galleryCaption = galleryEl.querySelector('.caption');
-    if (galleryCaption) elementsToFlip.push(galleryCaption);
+    const caption = galleryEl.querySelector('.caption');
+    if (caption) elementsToFlip.push(caption);
   }
+
+  const isCustomScale = typeof settings.flip.scale === 'number';
+  const actualScale = isCustomScale ? settings.flip.scale : 1;
 
   galleryEl.classList.add('gallery--switch');
   const flipstate = Flip.getState(elementsToFlip, {
@@ -47,7 +50,7 @@ export const triggerFlipOnScroll = (galleryEl, options = {}) => {
     ease: 'none',
     absoluteOnLeave: settings.flip.absoluteOnLeave,
     absolute: settings.flip.absolute,
-    scale: settings.flip.scale,
+    scale: !isCustomScale ? settings.flip.scale : false, // disable scale if number, handled separately
     simple: settings.flip.simple,
     duration: 1,
     scrollTrigger: {
@@ -60,10 +63,11 @@ export const triggerFlipOnScroll = (galleryEl, options = {}) => {
     stagger: settings.stagger,
   });
 
-  if (galleryItemsInner.length) {
+  // Si hay inner items y scale es un número válido
+  if (galleryItemsInner.length && isCustomScale && actualScale !== 1) {
     tl.fromTo(
       galleryItemsInner,
-      { scale: 2 },
+      { scale: actualScale },
       {
         scale: 1,
         scrollTrigger: {
@@ -78,37 +82,49 @@ export const triggerFlipOnScroll = (galleryEl, options = {}) => {
   }
 };
 
-
 export const scroll = () => {
   const galleries = [
-    { id: '#section-Reel', options: { 
-      flip: { absoluteOnLeave: true, scale: false } ,
-      includeCaption: true 
-    } },
-    { id: '#section-Df2u', options: { 
-      flip: { absolute: true, scale: false }, 
-      scrollTrigger: { start: 'center center', end: '+=200%' }, 
-      stagger: 0.01, 
-      includeCaption: true 
-    } },    
+    {
+      id: '#section-Reel',
+      options: {
+        flip: { absoluteOnLeave: true, scale: 1 },
+        includeCaption: true,
+      },
+    },
+    {
+      id: '#section-Df2u',
+      options: {
+        flip: { absolute: true, scale: 1 },
+        scrollTrigger: { start: 'center center', end: '+=200%' },
+        stagger: 0.01,
+        includeCaption: true,
+      },
+    },
     { id: '#section-Df2u-hScroll', type: 'horizontal' },
-    { id: '#section-Slack', options: { 
-      flip: { absolute: true, scale: false }, 
-      scrollTrigger: { start: 'center center', end: '+=200%' }, 
-      stagger: 0.01, 
-      includeCaption: true 
-    } },   
+    {
+      id: '#section-Slack',
+      options: {
+        flip: { absolute: true, scale: 1.5 },
+        scrollTrigger: { start: 'center center', end: '+=200%' },
+        stagger: 0.01,
+        includeCaption: true,
+      },
+    },
     { id: '#section-NightCap', type: 'horizontal' },
     { id: '#section-Mercedez' },
     { id: '#section-Tableau' },
     { id: '#section-DotOrg', type: 'horizontal' },
 
-    { id: '#gallery-4' },
-    { id: '#gallery-5' },
-    { id: '#gallery-6' },
-    { id: '#gallery-7' },
-    { id: '#gallery-8', options: { flip: { scale: false } } },
-    
+    // { id: '#gallery-4' },
+    // { id: '#gallery-5' },
+    // { id: '#gallery-6' },
+    // { id: '#gallery-7' },
+    // {
+    //   id: '#gallery-8',
+    //   options: {
+    //     flip: { scale: false },
+    //   },
+    // },
   ];
 
   galleries.forEach(({ id, options, type }) => {
@@ -116,9 +132,9 @@ export const scroll = () => {
     if (!el) return;
 
     if (type === 'horizontal') {
-      initHorizontalScroll(el); // Lógica para scroll horizontal
+      initHorizontalScroll(el);
     } else {
-      triggerFlipOnScroll(el, options); // Lógica FLIP por defecto
+      triggerFlipOnScroll(el, options);
     }
   });
 };

@@ -1,18 +1,28 @@
 'use client';
 
 
-import "../../styles/davos-h-scroll.css";
+import "../../styles/nightCap-h-scroll.css";
 
-// import dynamic from 'next/dynamic';
+import dynamic from 'next/dynamic';
 import { useEffect } from 'react';
 import { initHorizontalScroll } from '@/utils/horizontalScroll';
 
-// Carga dinámica del componente LottiePlayer
-// const LottiePlayer = dynamic(() => import('@lottiefiles/lottie-player'), { ssr: false });
+// Carga dinámica del componente (opcional en este caso, si ya cargás el script manualmente)
+const LottiePlayer = dynamic(() => import('@lottiefiles/lottie-player'), { ssr: false });
 
 export function SectionBlockNightcap() {
   useEffect(() => {
     initHorizontalScroll();
+
+    // Inyección del script de Lottie manualmente
+    const script = document.createElement('script');
+    script.src = 'https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js';
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
   }, []);
 
   return (
@@ -23,38 +33,42 @@ export function SectionBlockNightcap() {
         <div className="animation-wrap to-right">
             <div className="item">
                 <figure className="sh2-content-1">
-                    <div className="title-whales">
-                        <h4 className="title-section font-h1 text-grey text-900 anim-skew">Salesforce Nightcap</h4>
-                        <h4 className="title-section font-h1 text-grey text-900 anim-skew">World Economic Forum</h4>
-                        <h4 className="title-section text-grey text-300 anim-skew">Davos Switzerland</h4>
-                    </div>
+                    <section className="project--intro--NightCap">
+                        <h2 className="title-section font-h2 text-grey text-center split-lines animate-scroll-each single-line not-split">Salesforce Nightcap<br/>World Economic Forum<br/>Davos Switzerland</h2>
+                    </section>
                     <div className="content-whales">
                         <div className="whales whale-1">
-                            <div className="whale-move move-itemTop">
-                                <div id="whale-1 container"></div>
-                                {/* <script>
-                                    var animationWhale1 = bodymovin.loadAnimation({
-                                        container: document.getElementById("whale-1 container"),
-                                        path: "whale.json",
-                                        render: "svg",
-                                        loop: !0,
-                                        autoplay: !0,
-                                        name: "demo whale-1"
-                                    })
-                                </script> */}
+                            <div className="whale-move">
+                                <div id="whale-1 container">
+                                    <lottie-player
+                                        src="content/whale.json"
+                                        background="transparent"
+                                        speed="1"
+                                        loop
+                                        autoplay
+                                    ></lottie-player>
+                                </div>
                             </div>
                         </div>
-                        <div className="whales whale-2"><img src="content/whales/whale-02.png" className="whale-move move-itemLeft" alt="Salesforce"/></div>
-                        <div className="whales whale-3"><img src="content/whales/whale-03.svg" className="whale-move move-itemLeft" alt="Salesforce"/></div>
-                        <div className="whales whale-4"><img src="content/whales/whale-04.svg" className="whale-move move-itemLeft" alt="Salesforce"/></div>
+                        <div className="whales whale-2"><img src="content/whales/whale-02.png" alt="Salesforce"/></div>
+                        <div className="whales whale-3"><img src="content/whales/whale-03.svg" alt="Salesforce"/></div>
+                        <div className="whales whale-4"><img src="content/whales/whale-04.svg" alt="Salesforce"/></div>
                         <div className="whales whale-5">
-                            <div className="whale-move move-itemTop">
-                                <div id="whale-2 container"></div>
+                            <div className="whale-move">
+                                <div id="whale-1 container">
+                                    <lottie-player
+                                        src="content/whale-2.json"
+                                        background="transparent"
+                                        speed="1"
+                                        loop
+                                        autoplay
+                                    ></lottie-player>
+                                </div>
                             </div>
                         </div>
-                        <div className="whales whale-6"><img src="content/whales/whale-06.svg" className="whale-move move-itemRight" alt="Salesforce"/></div>
-                        <div className="whales whale-7"><img src="content/whales/whale-07.svg" className="whale-move move-itemTop" alt="Salesforce"/></div>
-                        <div className="whales whale-8"><img src="content/whales/whale-08.svg" className="whale-move move-itemRight" alt="Salesforce"/></div>
+                        <div className="whales whale-6"><img src="content/whales/whale-06.svg" alt="Salesforce"/></div>
+                        <div className="whales whale-7"><img src="content/whales/whale-07.svg" alt="Salesforce"/></div>
+                        <div className="whales whale-8"><img src="content/whales/whale-08.svg" alt="Salesforce"/></div>
                     </div>
                     <div className="poster-1"><img src="content/whales/02.svg" alt="Salesforce"/></div>
                 </figure>
@@ -82,8 +96,17 @@ export function SectionBlockNightcap() {
             <div className="item">
                 <figure className="sh2-content-4">
                     <div className="item-sh2-4-2">
-                        <div id="whale-3 container"></div>
-                    </div><img data-src="content/" src="content/whales/07_2.webp" alt="Salesforce"/>
+                        <div id="whale-3 container">
+                            <lottie-player
+                                src="content/whale-2.json"
+                                background="transparent"
+                                speed="1"
+                                loop
+                                autoplay
+                            ></lottie-player>
+                        </div>
+                    </div>
+                    <img data-src="content/" src="content/whales/07_2.webp" alt="Salesforce"/>
                 </figure>
             </div>
             <div className="item">

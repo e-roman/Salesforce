@@ -1,0 +1,497 @@
+/*SECTION MERCEDEZ > First*/
+#mercedesSection {
+}
+
+.content-top-mdz {
+    padding: 0 0 10rem 0;
+    position: relative;
+}
+.content-top-mdz .mb-info {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+
+.partnerships-btm {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 12vw;
+  bottom: 16vh;
+}
+.partnerships-btm h4 {
+    margin: 0 4rem 0 1rem;
+}
+.logo-partners {
+    display: flex;
+    gap: 25px;
+}
+
+
+/*SECTION MERCEDEZ > Second*/
+
+.content-bottom-mdz {
+  padding-top: 6rem;
+}
+.content-bottom-mdz h2 {
+  margin: 0 0 0 3vw;
+}
+
+.row-top {
+    background-image: url(https://s3.amazonaws.com/cresci.co-assets/projects/salesforce/mercedes-benz/bg-ellipse-fill.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    margin-top: 5rem;
+}
+.content-phones {
+    width:65vw;
+    margin: 0 auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.phone-1 {
+    width: 25vw;
+}
+.phone-1 .phone-img {
+    width: 100%;
+}
+.phone-2 { 
+    width: 25vw;
+    position: relative;
+}
+.phone-2 .phone-img {
+    width: 100%;
+}
+.phone-2 .date-text { 
+    margin-bottom: 6rem;
+}
+
+.dete-2021 {
+    position: absolute;
+    width: 570px;
+    top: -69px;
+    display: flex;
+}
+.dete-2021 .line-v_2021 {
+    width: 85%;
+}
+
+.content-animation {
+    width: 60vw;
+    position: relative;
+    height: 55vh;
+    margin-top: 0;
+}
+.item-animation {
+    position: absolute;
+}
+.item-car {
+    z-index: 1;
+    margin-left: 3rem;
+    bottom: -24vh;
+    width: 45vw;
+}
+.item-car img {
+    width: 100%;
+}
+.item-mountains {
+    right: 0;
+    width: 30vw;
+    overflow: hidden;
+    bottom: -11px;
+    z-index: 0;
+}
+.item-clouds {
+    left: 0;
+    overflow: hidden;
+    top: 6rem;
+    z-index: 0;
+    width: 60vw;
+}
+.item-clouds img {
+    width: 100%;
+}
+
+.item-bg {
+    left: 0;
+    bottom: -5rem;
+}
+.item-bg img {
+    width: 95%;
+}
+
+.row-bottom {
+    padding-bottom: 35rem;
+    position: relative;
+}
+
+@media (min-width: 1980px) {
+    .row-bottom {
+        padding-bottom: 83rem;
+    }
+}
+
+
+
+.elementCircle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.row-image {
+    width: 90vw;
+    margin: 0 auto;
+    padding: 10rem 0 0 0;
+}
+.d-block-image-1 {
+    display: flex;
+    justify-content: end;
+}
+.block-image {
+    width: 60%;
+}
+.block-image img {
+    width: 100%;
+}
+
+.row-slide {
+    width: 90vw;
+    margin: 0 auto;
+}
+.d-block-image-2 {
+    display: flex;
+    justify-content: start;
+}
+.slide-item {
+    width: 45%;
+}
+
+
+.slide-block .swiper-pagination {
+    position: relative;
+        margin-top: 1rem;
+}
+.slide-block .swiper-pagination-bullet {
+    background: #fff;
+    opacity: .9;
+}
+.slide-block .swiper-pagination-bullet-active {
+    background: #0073e0
+}
+
+
+
+.box-date-2022 {
+    padding: 0;
+    margin-top: 0;
+}
+.box-date-2022 .d-flex-center {
+    display: flex;
+    gap: 55px;
+}
+
+
+
+.swiper-slide img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+/**** ANIMATION 1 ****/
+svg.circles-mdbz.item-active {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+}
+svg.circles-mdbz.item-active .svg-elem-1 {
+  stroke-dashoffset: 1756px;
+  stroke-dasharray: 1756px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s, fill 0.5s ease 0.3s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s, fill 0.5s ease 0.3s;
+}
+
+svg.circles-mdbz.item-active.active .svg-elem-1 {
+  stroke-dashoffset: 0;
+}
+
+svg.circles-mdbz.item-active .svg-elem-2 {
+  stroke-dashoffset: 650.3973999023438px;
+  stroke-dasharray: 650.3973999023438px;
+  fill: transparent;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.12s,
+                        fill 0.5s ease 0.8s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.12s,
+                fill 0.5s ease 0.8s;
+}
+
+svg.circles-mdbz.item-active.active .svg-elem-2 {
+  stroke-dashoffset: 0;
+  fill: rgb(255, 255, 255);
+}
+
+svg.circles-mdbz.item-active .svg-elem-3 {
+  stroke-dashoffset: 678.3406372070312px;
+  stroke-dasharray: 678.3406372070312px;
+  fill: transparent;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.24s,
+                        fill 0.5s ease 1.3s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.24s,
+                fill 0.5s ease 1.3s;
+}
+
+svg.circles-mdbz.item-active.active .svg-elem-3 {
+  stroke-dashoffset: 0;
+  fill: rgb(255, 255, 255);
+}
+
+svg.circles-mdbz.item-active .svg-elem-4 {
+  stroke-dashoffset: 543.9883422851562px;
+  stroke-dasharray: 543.9883422851562px;
+  fill: transparent;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.36s,
+                        fill 0.5s ease 1.8s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.36s,
+                fill 0.5s ease 1.8s;
+}
+
+svg.circles-mdbz.item-active.active .svg-elem-4 {
+  stroke-dashoffset: 0;
+  fill: rgb(255, 255, 255);
+}
+
+svg.circles-mdbz.item-active .svg-elem-5 {
+  stroke-dashoffset: 102.9998779296875px;
+  stroke-dasharray: 102.9998779296875px;
+  fill: transparent;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.48s,
+                        fill 0.5s ease 2.3s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.48s,
+                fill 0.5s ease 2.3s;
+}
+
+svg.circles-mdbz.item-active.active .svg-elem-5 {
+  stroke-dashoffset: 0;
+  fill: rgb(255, 255, 255);
+}
+
+svg.circles-mdbz.item-active .svg-elem-6 {
+  stroke-dashoffset: 1349.025390625px;
+  stroke-dasharray: 1349.025390625px;
+  fill: transparent;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.6s,
+                        fill 0.5s ease 2.8s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.6s,
+                fill 0.5s ease 2.8s;
+}
+
+svg.circles-mdbz.item-active.active .svg-elem-6 {
+  stroke-dashoffset: 0;
+  fill: rgb(255, 255, 255);
+}
+
+svg.circles-mdbz.item-active .svg-elem-7 {
+  stroke-dashoffset: 2656.390625px;
+  stroke-dasharray: 2656.390625px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.72s,
+                        fill 0.5s ease 3.3s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.72s,
+                fill 0.5s ease 3.3s;
+}
+
+svg.circles-mdbz.item-active.active .svg-elem-7 {
+  stroke-dashoffset: 0;
+}
+
+svg.circles-mdbz.item-active .svg-elem-8 {
+  stroke-dashoffset: 932.6707763671875px;
+  stroke-dasharray: 932.6707763671875px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.84s,
+                        fill 0.5s ease 3.8s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.84s,
+                fill 0.5s ease 3.8s;
+}
+
+svg.circles-mdbz.item-active.active .svg-elem-8 {
+  stroke-dashoffset: 0;
+}
+
+svg.circles-mdbz.item-active .svg-elem-9 {
+  stroke-dashoffset: 1152.802001953125px;
+  stroke-dasharray: 1152.802001953125px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.96s,
+                        fill 0.5s ease 4.3s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.96s,
+                fill 0.5s ease 4.3s;
+}
+
+svg.circles-mdbz.item-active.active .svg-elem-9 {
+  stroke-dashoffset: 0;
+}
+
+svg.circles-mdbz.item-active .svg-elem-10 {
+  stroke-dashoffset: 1936.861328125px;
+  stroke-dasharray: 1936.861328125px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.08s,
+                        fill 0.5s ease 4.8s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.08s,
+                fill 0.5s ease 4.8s;
+}
+
+svg.circles-mdbz.item-active.active .svg-elem-10 {
+  stroke-dashoffset: 0;
+}
+
+svg.circles-mdbz.item-active .svg-elem-11 {
+  stroke-dashoffset: 53.529666900634766px;
+  stroke-dasharray: 53.529666900634766px;
+  fill: transparent;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.2s,
+                        fill 0.5s ease 5.3s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.2s,
+                fill 0.5s ease 5.3s;
+}
+
+svg.circles-mdbz.item-active.active .svg-elem-11 {
+  stroke-dashoffset: 0;
+  fill: rgb(255, 255, 255);
+}
+
+svg.circles-mdbz.item-active .svg-elem-12 {
+  stroke-dashoffset: 53.530033111572266px;
+  stroke-dasharray: 53.530033111572266px;
+  fill: transparent;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.3199999999999998s,
+                        fill 0.5s ease 5.8s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.3199999999999998s,
+                fill 0.5s ease 5.8s;
+}
+
+svg.circles-mdbz.item-active.active .svg-elem-12 {
+  stroke-dashoffset: 0;
+  fill: rgb(255, 255, 255);
+}
+
+svg.circles-mdbz.item-active .svg-elem-13 {
+  stroke-dashoffset: 53.53066635131836px;
+  stroke-dasharray: 53.53066635131836px;
+  fill: transparent;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.44s,
+                        fill 0.5s ease 4.3s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.44s,
+                fill 0.5s ease 4.3s;
+}
+
+svg.circles-mdbz.item-active.active .svg-elem-13 {
+  stroke-dashoffset: 0;
+  fill: rgb(255, 255, 255);
+}
+
+svg.circles-mdbz.item-active .svg-elem-14 {
+  stroke-dashoffset: 53.53047561645508px;
+  stroke-dasharray: 53.53047561645508px;
+  fill: transparent;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.56s,
+                        fill 0.5s ease 6.8s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.56s,
+                fill 0.5s ease 6.8s;
+}
+
+svg.circles-mdbz.item-active.active .svg-elem-14 {
+  stroke-dashoffset: 0;
+  fill: rgb(255, 255, 255);
+}
+
+svg.circles-mdbz.item-active .svg-elem-15 {
+  stroke-dashoffset: 1033.38525390625px;
+  stroke-dasharray: 1033.38525390625px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.68s,
+                        fill 0.5s ease 7.3s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.68s,
+                fill 0.5s ease 7.3s;
+}
+
+svg.circles-mdbz.item-active.active .svg-elem-15 {
+  stroke-dashoffset: 0;
+}
+
+svg.circles-mdbz.item-active .svg-elem-16 {
+  stroke-dashoffset: 23.177288055419922px;
+  stroke-dasharray: 23.177288055419922px;
+  fill: transparent;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.7999999999999998s,
+                        fill 0.5s ease 7.8s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.7999999999999998s,
+                fill 0.5s ease 7.8s;
+}
+
+svg.circles-mdbz.item-active.active .svg-elem-16 {
+  stroke-dashoffset: 0;
+  fill: rgb(255, 255, 255);
+}
+
+svg.circles-mdbz.item-active .svg-elem-17 {
+  stroke-dashoffset: 23.177019119262695px;
+  stroke-dasharray: 23.177019119262695px;
+  fill: transparent;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.92s,
+                        fill 0.5s ease 8.3s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.92s,
+                fill 0.5s ease 8.3s;
+}
+
+svg.circles-mdbz.item-active.active .svg-elem-17 {
+  stroke-dashoffset: 0;
+  fill: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+/**** ANIMATION 2 ****/
+.halfLines-move.item-active-delay .halfLines-elem-1 {
+  stroke-dashoffset: 1767.8236083984375px;
+  stroke-dasharray: 1767.8236083984375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.5s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.5s;
+}
+.halfLines-move.item-active-delay.active .halfLines-elem-1 {
+  stroke-dashoffset: 0;
+}
+
+.halfLines-move.item-active-delay .halfLines-elem-2 {
+  stroke-dashoffset: 1767.8233642578125px;
+  stroke-dasharray: 1767.8233642578125px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.5s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.5s;
+}
+.halfLines-move.item-active-delay.active .halfLines-elem-2 {
+  stroke-dashoffset: 0;
+}
+
+.halfLines-move.item-active-delay .halfLines-elem-3 {
+  stroke-dashoffset: 1290px;
+  stroke-dasharray: 1290px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.3s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.3s;
+}
+.halfLines-move.item-active-delay.active .halfLines-elem-3 {
+  stroke-dashoffset: 0;
+}
+
+
+
