@@ -27,13 +27,13 @@ export default function Home() {
 
   return (
     <main className="main">
-     {/* <SectionHero />
+      <SectionHero />
       <SectionBlock1 />
       <SectionBlockReel />
       <SectionBlockDf2u /> 
       <HorizontalScrollDf2u />
       <SectionBlockSlack />
-      <SectionBlockNightcap /> */}
+      <SectionBlockNightcap /> 
       <SectionBlockMecedes/>
       <SectionBlockTableau/>
       <SectionBlockDotOrg/>
