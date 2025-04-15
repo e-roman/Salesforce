@@ -1,29 +1,19 @@
 'use client';
 
-
 import "../../styles/nightCap-h-scroll.css";
 
 import dynamic from 'next/dynamic';
+const Player = dynamic(
+  () => import('@lottiefiles/react-lottie-player').then((mod) => mod.Player),
+  { ssr: false }
+);
 import { useEffect } from 'react';
 import { initHorizontalScroll } from '@/utils/horizontalScroll';
 
-// Carga dinámica del componente (opcional en este caso, si ya cargás el script manualmente)
-const LottiePlayer = dynamic(() => import('@lottiefiles/lottie-player'), { ssr: false });
-
 export function SectionBlockNightcap() {
-  useEffect(() => {
-    initHorizontalScroll();
-
-    // Inyección del script de Lottie manualmente
-    const script = document.createElement('script');
-    script.src = 'https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js';
-    script.async = true;
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
+    useEffect(() => {
+        initHorizontalScroll();
+    }, []);
 
   return (
     <>
@@ -40,13 +30,13 @@ export function SectionBlockNightcap() {
                         <div className="whales whale-1">
                             <div className="whale-move">
                                 <div id="whale-1 container">
-                                    <lottie-player
+                                    <Player
                                         src="content/whale.json"
                                         background="transparent"
                                         speed="1"
                                         loop
                                         autoplay
-                                    ></lottie-player>
+                                    ></Player>
                                 </div>
                             </div>
                         </div>
@@ -56,13 +46,13 @@ export function SectionBlockNightcap() {
                         <div className="whales whale-5">
                             <div className="whale-move">
                                 <div id="whale-1 container">
-                                    <lottie-player
+                                    <Player
                                         src="content/whale-2.json"
                                         background="transparent"
                                         speed="1"
                                         loop
                                         autoplay
-                                    ></lottie-player>
+                                    ></Player>
                                 </div>
                             </div>
                         </div>
@@ -97,13 +87,13 @@ export function SectionBlockNightcap() {
                 <figure className="sh2-content-4">
                     <div className="item-sh2-4-2">
                         <div id="whale-3 container">
-                            <lottie-player
+                            <Player
                                 src="content/whale-2.json"
                                 background="transparent"
                                 speed="1"
                                 loop
                                 autoplay
-                            ></lottie-player>
+                            ></Player>
                         </div>
                     </div>
                     <img data-src="content/" src="content/whales/07_2.webp" alt="Salesforce"/>

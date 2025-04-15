@@ -26,29 +26,15 @@ export function SectionHero() {
     <>
       <div className="content">
         <div className="grid-hero">
-          <div
-            className="grid__item"
-            style={{ '--r': 1, '--c': 4 }}
-          >
-            <div className="grid__item-img">
-              <video
-                className="parallax-object"
-                width="100%"
-                autoPlay
-                playsInline
-                muted
-                loop
-                preload="metadata"
-              >
-                <source src="content/hero/02.mp4" type="video/mp4" />
-              </video>
+          
+          <div className="grid__item" style={{ '--r': 1, '--c': 4 }}>
+            <div className="grid__item-img ps-1">
+                <img src="content/hero/01.webp" alt="Salesforce" className='parallax-object'/>
             </div>
           </div>
-          <div
-            className="grid__item"
-            style={{ '--r': 1, '--c': 1 }}
-          >
-            <div className="grid__item-img">
+
+          <div className="grid__item" style={{ '--r': 1, '--c': 1 }}>
+            <div className="grid__item-img ps-2">
               <video
                 className="parallax-object"
                 width="100%"
@@ -62,32 +48,41 @@ export function SectionHero() {
               </video>
             </div>
           </div>
-          <div
-            className="grid__item"
-            style={{ '--r': 2, '--c': 6 }}
-          >
-              <div className="grid__item-img">
+
+          <div className="grid__item" style={{ '--r': 1, '--c': 2 }}>
+            <div className="grid__item-img">
+              <video
+                className="parallax-object"
+                width="70%"
+                autoPlay
+                playsInline
+                muted
+                loop
+                preload="metadata"
+              >
+                <source src="content/hero/02.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+
+          <div className="grid__item" style={{ '--r': 2, '--c': 6 }}>
+              <div className="grid__item-img ps-7">
                 <video
                   className="parallax-object"
-                  width="100%"
                   autoPlay
                   playsInline
                   muted
                   loop
                   preload="metadata"
                 >
-                  <source src="content/hero/01.mp4" type="video/mp4" />
+                  <source src="content/hero/04b.mp4" type="video/mp4" />
                 </video>
               </div>
           </div>
-          <div
-            className="grid__item"
-            style={{ '--r': 2, '--c': 5 }}
-          >
-              <div className="grid__item-img">
+          <div className="grid__item" style={{ '--r': 2, '--c': 5 }}>
+              <div className="grid__item-img ps-4">
                 <video
                   className="parallax-object"
-                  width="100%"
                   autoPlay
                   playsInline
                   muted
@@ -102,46 +97,9 @@ export function SectionHero() {
             className="grid__item"
             style={{ '--r': 3, '--c': 3 }}
           >
-              <div className="grid__item-img">
+              <div className="grid__item-img ps-8">
                 <video
                   className="parallax-object"
-                  width="100%"
-                  autoPlay
-                  playsInline
-                  muted
-                  loop
-                  preload="metadata"
-                >
-                  <source src="content/hero/08.mp4" type="video/mp4" />
-                </video>
-              </div>
-          </div>
-          <div
-            className="grid__item"
-            style={{ '--r': 2, '--c': 2 }}
-          >
-              <div className="grid__item-img">
-                <video
-                  className="parallax-object"
-                  width="100%"
-                  autoPlay
-                  playsInline
-                  muted
-                  loop
-                  preload="metadata"
-                >
-                  <source src="content/hero/06.mp4" type="video/mp4" />
-                </video>
-              </div>
-          </div>
-          <div
-            className="grid__item"
-            style={{ '--r': 3, '--c': 5 }}
-          >
-              <div className="grid__item-img">
-                <video
-                  className="parallax-object"
-                  width="100%"
                   autoPlay
                   playsInline
                   muted
@@ -152,15 +110,44 @@ export function SectionHero() {
                 </video>
               </div>
           </div>
-          <div
-            className="grid__item"
-            style={{ '--r': 3, '--c': 1 }}
-          >
+
+          <div className="grid__item" style={{ '--r': 2, '--c': 2 }}>
+              <div className="grid__item-img ps-5">
+                    <img className='parallax-object'
+                      data-src="content/"
+                      src="content/hero/05.webp"
+                      alt="Salesforce"
+                    />
+              </div>
+          </div>
+
+          <div className="grid__item" style={{ '--r': 3, '--c': 6 }}>
+              <div className="grid__item-img">
+                <video
+                  className="parallax-object"
+                  autoPlay
+                  playsInline
+                  muted
+                  loop
+                  preload="metadata"
+                >
+                  <source src="content/hero/08.mp4" type="video/mp4" />
+                </video>
+              </div>
+          </div>
+
+          <div className="grid__item" style={{ '--r': 3, '--c': 1 }}>
             <div className="grid__item-img">
-              <div
-                className="grid__item-img parallax-object"
-                style={{ backgroundImage: 'url(/content/hero/05.webp)'}}
-              ></div>
+            <video
+                  className="parallax-object"
+                  autoPlay
+                  playsInline
+                  muted
+                  loop
+                  preload="metadata"
+                >
+                  <source src="content/hero/06.mp4" type="video/mp4" />
+                </video>
             </div>
           </div>
         </div>

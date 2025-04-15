@@ -9,7 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@lottiefiles/lottie-player": "^2.0.12",
+    "@lottiefiles/react-lottie-player": "^3.6.0",
+    "@vercel/speed-insights": "^1.2.0",
     "gsap": "^3.12.7",
     "imagesloaded": "^5.0.0",
     "jquery": "^3.7.1",

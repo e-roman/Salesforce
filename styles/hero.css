@@ -1,3 +1,10 @@
+
+:root {
+	--align-end: flex-end;
+	--align-start: flex-start; 
+	--justify-content-end: flex-end; 
+	--justify-content-start: flex-start; 
+}
 .content {
     position: relative;
 }
@@ -8,14 +15,14 @@
 	grid-template-columns: repeat(6, 1fr);
 }
 
-.grid__item {
+.grid-hero .grid__item {
 	position: relative;
 	will-change: transform;
 	grid-column: var(--c);
 	grid-row: var(--r);
 }
 
-.grid__item-img {
+.grid-hero .grid__item-img {
     position: relative;
     width: 100%;
     height: auto;
@@ -60,4 +67,42 @@
 
 .grid-hero video.parallax-object {
     position: absolute;
+	overflow: hidden;
+	border-radius: 12px;
+}
+
+.grid-hero video {
+	overflow: hidden;
+	border-radius: 8px;
+}
+.grid-hero .grid__item-img{
+	display: flex;
+}
+.grid-hero .grid__item-img.ps-1 {
+    align-items: var(--align-start);
+}
+.grid-hero .grid__item-img.ps-2 {
+    align-items: var(--align-end);
+}
+.grid-hero .grid__item-img.ps-3 {
+    margin-left: -10rem;
+}
+.grid-hero .grid__item-img.ps-4 {
+    align-items: var(--align-start);
+	justify-content: var(--justify-content-end);
+}
+.grid-hero .grid__item-img.ps-4 video{
+	margin-right: -8rem;
+}
+.grid-hero .grid__item-img.ps-5 {
+    margin-left: -12rem;
+}
+.grid-hero .grid__item-img.ps-7 {
+    align-items: var(--align-start);
+}
+.grid-hero .grid__item-img.ps-6 {
+    align-items: var(--align-start);
+}
+.grid-hero .grid__item-img.ps-8 {
+    align-items: var(--align-end);
 }

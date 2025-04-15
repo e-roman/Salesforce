@@ -3,26 +3,17 @@
 import "../../styles/df2u-h-scroll.css";
 
 import dynamic from 'next/dynamic';
+const Player = dynamic(
+  () => import('@lottiefiles/react-lottie-player').then((mod) => mod.Player),
+  { ssr: false }
+);
 import { useEffect } from 'react';
 import { initHorizontalScroll } from '@/utils/horizontalScroll';
 
-// Carga dinámica del componente (opcional en este caso, si ya cargás el script manualmente)
-const LottiePlayer = dynamic(() => import('@lottiefiles/lottie-player'), { ssr: false });
-
 export function HorizontalScrollDf2u() {
+
   useEffect(() => {
-    // Init scroll
-    initHorizontalScroll();
-
-    // Inyección del script de Lottie manualmente
-    const script = document.createElement('script');
-    script.src = 'https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js';
-    script.async = true;
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    };
+      initHorizontalScroll();
   }, []);
 
   return (
@@ -136,13 +127,13 @@ export function HorizontalScrollDf2u() {
                   <div className="box-s3 box-s3-3">
                     <h6>Hummingbird</h6>
                     <div id="bird-container">
-                      <lottie-player
+                      <Player
                         src="content/bird.json"
                         background="transparent"
                         speed="1"
                         loop
                         autoplay
-                      ></lottie-player>
+                      ></Player>
                     </div>
                   </div>
                 </figure>
