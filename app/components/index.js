@@ -1,3 +1,4 @@
+export { LoaderInit } from './LoaderInit';
 export { SectionHero } from './SectionBlock_1_Hero';
 export { SectionBlock1 } from './SectionBlock_2_Text';
 export { SectionBlockReel } from './SectionBlock_3_Reel';

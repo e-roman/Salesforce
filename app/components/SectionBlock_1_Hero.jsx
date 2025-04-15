@@ -29,14 +29,14 @@ export function SectionHero() {
           
           <div className="grid__item" style={{ '--r': 1, '--c': 4 }}>
             <div className="grid__item-img ps-1">
-                <img src="content/hero/01.webp" alt="Salesforce" className='parallax-object'/>
+                <img src="content/hero/01.webp" alt="Salesforce" className='parallax-object img-zoom'/>
             </div>
           </div>
 
           <div className="grid__item" style={{ '--r': 1, '--c': 1 }}>
             <div className="grid__item-img ps-2">
               <video
-                className="parallax-object"
+                className="parallax-object img-zoom"
                 width="100%"
                 autoPlay
                 playsInline
@@ -52,7 +52,7 @@ export function SectionHero() {
           <div className="grid__item" style={{ '--r': 1, '--c': 2 }}>
             <div className="grid__item-img">
               <video
-                className="parallax-object"
+                className="parallax-object img-zoom"
                 width="70%"
                 autoPlay
                 playsInline
@@ -68,7 +68,7 @@ export function SectionHero() {
           <div className="grid__item" style={{ '--r': 2, '--c': 6 }}>
               <div className="grid__item-img ps-7">
                 <video
-                  className="parallax-object"
+                  className="parallax-object img-zoom"
                   autoPlay
                   playsInline
                   muted
@@ -82,7 +82,7 @@ export function SectionHero() {
           <div className="grid__item" style={{ '--r': 2, '--c': 5 }}>
               <div className="grid__item-img ps-4">
                 <video
-                  className="parallax-object"
+                  className="parallax-object img-zoom"
                   autoPlay
                   playsInline
                   muted
@@ -99,7 +99,7 @@ export function SectionHero() {
           >
               <div className="grid__item-img ps-8">
                 <video
-                  className="parallax-object"
+                  className="parallax-object img-zoom"
                   autoPlay
                   playsInline
                   muted
@@ -113,7 +113,7 @@ export function SectionHero() {
 
           <div className="grid__item" style={{ '--r': 2, '--c': 2 }}>
               <div className="grid__item-img ps-5">
-                    <img className='parallax-object'
+                    <img className='parallax-object img-zoom'
                       data-src="content/"
                       src="content/hero/05.webp"
                       alt="Salesforce"
@@ -124,7 +124,7 @@ export function SectionHero() {
           <div className="grid__item" style={{ '--r': 3, '--c': 6 }}>
               <div className="grid__item-img">
                 <video
-                  className="parallax-object"
+                  className="parallax-object img-zoom"
                   autoPlay
                   playsInline
                   muted
@@ -139,7 +139,7 @@ export function SectionHero() {
           <div className="grid__item" style={{ '--r': 3, '--c': 1 }}>
             <div className="grid__item-img">
             <video
-                  className="parallax-object"
+                  className="parallax-object img-zoom"
                   autoPlay
                   playsInline
                   muted
@@ -153,8 +153,9 @@ export function SectionHero() {
         </div>
         <div className="cover">
           <div className="logo-hero"><img src="/content/hero/logo-salesforce.svg" width="100%" className="img-zoom"/></div>
-          <h2 className="cover__title split-lines animate-scroll-each single-line not-split">Connection <br/>propels us beyond</h2>
-          <h3 className="cover__subtitle">Enhancing Salesforce success<br/>through digital and physical synergy.</h3>
+          <h2 className="cover__title text-up">Connection</h2>
+          <h2 className="cover__title text-up">propels us beyond</h2>
+          <h3 className="cover__subtitle text-up">Enhancing Salesforce success<br/>through digital and physical synergy.</h3>
         </div>
       </div>
     </>

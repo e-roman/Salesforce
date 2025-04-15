@@ -1,0 +1,41 @@
+
+body.cs-transition #page-transition {
+    position: relative;
+    display: block;
+    z-index: 99999;
+}
+
+body.cs-transition .ptr-overlay {
+    background-image: none;
+}
+body.cs-transition .ptr-overlay {
+    background-color: red;
+}
+
+body.cs-transition .ptr-preloader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    background: violet;
+}
+body.cs-transition .ptr-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: blue; /* o el color que quieras */
+    z-index: 1;
+}
+
+.loader__wrap {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}

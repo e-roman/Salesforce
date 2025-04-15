@@ -1,16 +1,19 @@
 'use client';
 
 import { useEffect } from 'react';
+import { initPreloader } from '@/utils/initPreloader';
 import { initSmoothScrolling } from '@/utils/smoothScroll';
 import { scroll } from '@/utils/scroll.js';
 import { preloadImages } from '@/utils/preloadImages';
 import { activateElements, activateElementsDelay, activateAnimations } from '@/utils/activeElemente';
 import { initSplitText, initSplitLinesAnimations } from '@/utils/animateSplit';
-
-import { SectionHero, SectionBlock1, SectionBlockReel, SectionBlockDf2u, HorizontalScrollDf2u, SectionBlockSlack, SectionBlockNightcap, SectionBlockMecedes, SectionBlockTableau, SectionBlockDotOrg, SectionBlock7, SectionBlock8, SectionBlock9, SectionBlock10 } from './components';
+import { LoaderInit, SectionHero, SectionBlock1, SectionBlockReel, SectionBlockDf2u, HorizontalScrollDf2u, SectionBlockSlack, SectionBlockNightcap, SectionBlockMecedes, SectionBlockTableau, SectionBlockDotOrg } from './components';
 
 export default function Home() {
   useEffect(() => {
+    document.body.classList.add('cs-transition');
+    initPreloader(); 
+
     preloadImages('.gallery__item').then(() => {
       requestAnimationFrame(() => {
         initSplitText();
@@ -27,6 +30,7 @@ export default function Home() {
 
   return (
     <main className="main">
+      <LoaderInit />
       <SectionHero />
       <SectionBlock1 />
       <SectionBlockReel />
@@ -37,10 +41,6 @@ export default function Home() {
       <SectionBlockMecedes/>
       <SectionBlockTableau/>
       <SectionBlockDotOrg/>
-     {/* <SectionBlock7 />
-      <SectionBlock8 />
-      <SectionBlock9 />
-      <SectionBlock10 />  */}
     </main>
   );
 }
