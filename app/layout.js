@@ -1,6 +1,7 @@
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
 import "../styles/base.css";
+import "../styles/fonts.css";
 
 export const metadata = {
   title: "Create Next App",

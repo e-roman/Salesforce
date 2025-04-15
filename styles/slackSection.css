@@ -1,0 +1,103 @@
+/*SLACK SECTIOJN*/
+#section-Slack_top {
+  position: relative;
+}
+
+
+#section-Slack.gallery--grid10 .caption-fixed {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  margin: 0;
+  place-items: center;
+  display: flex;
+  justify-content: center;
+  z-index: -1;
+}
+.caption-fixed h2 {
+  font-family: var(--font-helvetica);
+  font-size: clamp(2rem, 4vw, 4rem);
+  text-align: center;
+  line-height: 1;
+}
+
+#section-Slack video {
+  border-radius: 16px;
+}
+
+.gallery__item.pos-2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.gallery__item.pos-2 video {
+  width: 60%;
+}
+
+.gallery--grid10:not(.gallery--switch) .pos-6 video {
+  transform: scale(1.5);
+}
+
+.gallery--switch.gallery--grid10 .pos-1 { width: 60%;}
+
+.gallery--switch.gallery--grid10 .pos-3 { width: 80%; margin-left: auto;}
+.gallery--switch.gallery--grid10 .pos-4 { width: 85%; margin-top: auto;display: flex;}
+.gallery--switch.gallery--grid10 .pos-6 { width: 80%; margin-left: auto; margin-top: auto;display: flex;}
+.gallery--switch.gallery--grid10 .pos-6 video {transform: scale(1.0);}
+
+.gallery--grid10:not(.gallery--switch) .pos-1 { width: 100%;}
+.gallery--grid10:not(.gallery--switch) .pos-2 { width: 100%;}
+.gallery--grid10:not(.gallery--switch) .pos-3 { width: 100%;}
+.gallery--grid10:not(.gallery--switch) .pos-4 { width: 100%;}
+.gallery--grid10:not(.gallery--switch) .pos-6 { width: 100%;}
+
+
+
+
+
+#section-Slack_top h2 {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  justify-content: center;
+  position: inherit;
+  margin: 2rem 0 0 0;
+}
+.s-title-slack {
+    padding-top: 10rem;
+}
+
+svg.slk-line {
+    margin: 0 auto;
+    display: block;
+    display: flex
+}
+
+
+    svg.slk-line.item-active .pathLine-elem-1 {
+    stroke-dashoffset: 41.85096740722656px;
+    stroke-dasharray: 41.85096740722656px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.5s,
+                          fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1s;
+            transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.5s,
+                  fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.5s;
+  }
+  svg.slk-line.item-active.active .pathLine-elem-1 {
+    stroke-dashoffset: 0;
+    fill: rgb(255, 255, 255);
+  }
+  svg.slk-line.item-active .pathLine-elem-2 {
+    stroke-dashoffset: 315.5px;
+    stroke-dasharray: 315.5px;
+    -webkit-transition: stroke-dashoffset .5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.2s,
+                          fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) .2s;
+            transition: stroke-dashoffset .5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.2s,
+                  fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.2s;
+  }
+  svg.slk-line.item-active.active .pathLine-elem-2 {
+    stroke-dashoffset: 0;
+  }
+  

@@ -8,7 +8,9 @@ export function SectionBlockDf2u() {
   return (
     <div id="df2uSection">
       <section className="project--details-ab">
-          <h2 className="title-section-ab font-h2 text-grey text-900 split-lines animate-scroll-each single-line not-split">Slack Keynote UI<br/>and product features<br/>animations</h2>
+          <h2 className="title-section-ab font-h2 text-grey split-lines animate-scroll-each single-line not-split">
+            DF2U<br/>Broadcast Assets<br/>Opening Keynote
+          </h2>
       </section>
       <div className="gallery-wrap">
         <div className="gallery gallery--gridCircles" id="section-Df2u">

@@ -1,5 +1,6 @@
 .intro__title {
     grid-area: title;
+    font-family: var(--font-helvetica);
     font-size: clamp(2rem, 3vw, 8rem);
     font-weight: 400;
     margin: 10vh 0;

@@ -19,7 +19,7 @@ export function activateElements() {
 }
 
 export function activateElementsDelay() {
-  const itemActiveAnimDelay = document.querySelectorAll('.item-active-middle');
+  const itemActiveAnimDelay = document.querySelectorAll('.item-active-delay');
   itemActiveAnimDelay.forEach((itemDelay) => {
     gsap.to(itemDelay, {
       scrollTrigger: {

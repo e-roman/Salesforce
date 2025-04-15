@@ -3,15 +3,15 @@
 
 import { useEffect } from 'react';
 
+import "../../styles/tableauSection.css";
+
 export function SectionBlockTableau() {
   return (
     <>
-        <section className="">
+        <section className="boxdate-2022">
           <div className="d-flex-center">
-              <div><img src="content/wow-tableau/date-2022.svg" className="anim-movZoom" alt="Salesforce"/></div>
-              <h4 className="title-section font-h1 text-grey text-900">
-                Tableau Conference Game Show<br/>
-                <span className="title-section text-grey text-300">Design &amp; Animation Assets</span></h4>
+              <div><img src="content/wow-tableau/date-2022.svg" className="h-100 anim-movZoom" alt="Salesforce"/></div>
+              <h4 className="font-h4 text-grey h-100 anim-skew">Tableau Conference Game Show<br/> Design &amp; Animation Assets</h4>
           </div>
         </section>
         <div className="gallery-wrap gallery-wrap--large">

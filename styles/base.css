@@ -13,54 +13,20 @@
 	--color-label: #adadad;
 	--color-text-alt: #575757;
 	--color-caption: #fff;
+	--font-helvetica: 'helvetica_neue65_medium';
 }
 
 body {
 	margin: 0;
 	color: var(--color-text);
 	background-color: var(--color-bg);
-	font-family: "tenon",-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+	font-family: 'helvetica-neue-lt-com-55-roman-webfont', Helvetica, Arial, sans-serif;
 	font-weight: 400;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
-/* Page Loader */
-.js .loading::before,
-.js .loading::after {
-	content: '';
-	position: fixed;
-	z-index: 1000;
-}
-
-.js .loading::before {
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: var(--color-bg);
-}
-
-.js .loading::after {
-	top: 50%;
-	left: 50%;
-	width: 60px;
-	height: 60px;
-	margin: -30px 0 0 -30px;
-	border-radius: 50%;
-	opacity: 0.4;
-	background: var(--color-link);
-	animation: loaderAnim 0.7s linear infinite alternate forwards;
-
-}
-/* 
-@keyframes loaderAnim {
-	to {
-		opacity: 1;
-		transform: scale3d(0.5,0.5,1);
-	}
-} */
-
+h1, h2, h3, h4, h5, h6 { font-weight: normal;}
 
 main {
 	position: relative;
@@ -728,18 +694,24 @@ main {
     line-height: 1;
     margin: 0;
 }
-.text-900 {
-    font-family: 'helvetica_neue65_medium';
-}
+
 .text-grey {
     color: #908F93;
 }
+.font-h1 {
+    font-size: clamp(20px, 3vw, 4vw);
+}
 .font-h2 {
-    font-size: clamp(20px, 5vw, 40px);
+    font-size: clamp(20px, 2.5vw, 4vw);
+	font-family: var(--font-helvetica)
+}
+.font-h4 {
+    font-size: clamp(20px, 1.5vw, 3vw);
+    font-family: var(--font-helvetica);
 }
 .title-section {
-    line-height: .9;
-    font-family: 'helvetica_neue65_medium';
+    line-height: 1;
+    font-family: var(--font-helvetica);
     margin: 0;
 }
 
@@ -756,67 +728,3 @@ main {
     height: 100%;
 }
 
-
-
-/*SLACK SECTIOJN*/
-
-#section-Slack_top h2{
-    top: 30vh;
-    left: 5vw;
-}
-#section-Slack.gallery--grid10 .caption-fixed {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    margin: 0;
-    place-items: center;
-    font-size: clamp(2rem, 4vw, 4rem);
-    text-align: center;
-    line-height: 1;
-    display: flex;
-    justify-content: center;
-    z-index: -1;
-}
-
-#section-Slack video {
-    border-radius: 16px;
-}
-.v-p-right{
-	margin-left: auto;
-	display: block;
-}
-.gallery__item.pos-2 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-}
-.gallery__item.pos-2 video {
-    width: 60%;
-}
-
-.gallery--grid10:not(.gallery--switch) .pos-6 video {
-    transform: scale(1.5);
-}
-
-.gallery--switch.gallery--grid10 .pos-1 { width: 60%;}
-
-.gallery--switch.gallery--grid10 .pos-3 { width: 80%; margin-left: auto;}
-.gallery--switch.gallery--grid10 .pos-4 { width: 85%; margin-top: auto;display: flex;}
-.gallery--switch.gallery--grid10 .pos-6 { width: 80%; margin-left: auto; margin-top: auto;display: flex;}
-.gallery--switch.gallery--grid10 .pos-6 video {transform: scale(1.0);}
-
-.gallery--grid10:not(.gallery--switch) .pos-1 { width: 100%;}
-.gallery--grid10:not(.gallery--switch) .pos-2 { width: 100%;}
-.gallery--grid10:not(.gallery--switch) .pos-3 { width: 100%;}
-.gallery--grid10:not(.gallery--switch) .pos-4 { width: 100%;}
-.gallery--grid10:not(.gallery--switch) .pos-6 { width: 100%;}
-
-
-
-
-/** SECTION TABLEAU**/
-#gallery-2 .gallery__item-inner {
-    transform: scale(1) !important;
-}

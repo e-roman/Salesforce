@@ -9,7 +9,7 @@ export function SectionBlockMecedes() {
     <>
     <section id='section-Mercedez'>
         <div className="project project--details">
-          <h2 className="title-section font-h2 text-grey text-center split-lines animate-scroll-each single-line not-split">
+          <h2 className="title-section font-h2 split-lines animate-scroll-each single-line not-split">
             We don't merely create;<br/>
             we immerse ourselves,<br/>
             seeking to comprehend,<br/>
@@ -70,7 +70,7 @@ export function SectionBlockMecedes() {
             <div className="row-bottom">
                 <div className="mercedes-pin">
                     <div className="elementCircle">
-                        <svg className="halfLines-move item-active-middle" width="100%" height="100%" viewBox="0 0 1920 2413" fill="none" xmlns="http://www.w3.org/2000/svg"><path className="halfLines-elem-1" d="M2084 0C2084 620.768 1580.77 1124 960 1124" stroke="white"></path><path className="halfLines-elem-2" d="M-164 0C-164 620.768 339.232 1124 960 1124" stroke="white"></path><line className="halfLines-elem-3" x1="960.5" y1="1125" x2="960.5" y2="2413" stroke="white"></line></svg>
+                        <svg className="halfLines-move item-active-delay" width="100%" height="100%" viewBox="0 0 1920 2413" fill="none" xmlns="http://www.w3.org/2000/svg"><path className="halfLines-elem-1" d="M2084 0C2084 620.768 1580.77 1124 960 1124" stroke="white"></path><path className="halfLines-elem-2" d="M-164 0C-164 620.768 339.232 1124 960 1124" stroke="white"></path><line className="halfLines-elem-3" x1="960.5" y1="1125" x2="960.5" y2="2413" stroke="white"></line></svg>
                     </div>
                     <div className="row-image">
                         <div className="d-block-image-1">

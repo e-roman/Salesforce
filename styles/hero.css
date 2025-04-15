@@ -66,9 +66,8 @@
 }
 
 .cover__title {
-    font-family: novecento-sans-wide, sans-serif;
     font-size: clamp(2rem, 5vw, 8rem);
-    font-weight: 600;
+    font-family: 'helvetica_neue65_medium';
     margin: 0;
     text-align: center;
     line-height: .55;
