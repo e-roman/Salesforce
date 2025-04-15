@@ -34,6 +34,24 @@
     align-items: center;
 }
 
+
+
+.logo-hero {
+    padding-bottom: 1.5rem;
+}
+.logo-hero {
+    width: 120px;
+    margin: 0 auto;
+}
+.logo-hero {
+    animation: 1.5s ease-in infinite alternate crescendo;
+}
+@keyframes crescendo {
+    0%{transform:scale(.9)}
+    100%{transform:scale(1)}
+}
+
+
 .cover {
 	position: absolute;
 	width: 100%;
@@ -49,18 +67,17 @@
 
 .cover__title {
     font-family: novecento-sans-wide, sans-serif;
-    font-size:7vw;
+    font-size: clamp(2rem, 5vw, 8rem);
     font-weight: 600;
     margin: 0;
     text-align: center;
-    line-height: .85;
-	padding-bottom: 1.514rem;
+    line-height: .55;
+    padding-bottom: 1.514rem;
 }
 
 .cover__subtitle {
 	font-size: 1.5vw;
 	font-weight: 400;
-	margin: 0;
 	text-align: center;
 }
 

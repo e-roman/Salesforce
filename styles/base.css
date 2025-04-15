@@ -85,13 +85,7 @@ main {
 	flex-direction: column;
     gap: 0.5rem;
 }
-.project--intro .block-textIntro {
-    max-width: 35vw;
-    margin: 15vh 5vw 0 auto;
-}
-.project--intro .block-textIntro p{
-    font-size: clamp(1rem, 2vw, 1.214rem);
-}
+
 /* .project--intro {
 	grid-template-columns: 1fr;
 	grid-template-areas: 'label-name' 

@@ -463,33 +463,33 @@ svg.circles-mdbz.item-active.active .svg-elem-17 {
 
 
 /**** ANIMATION 2 ****/
-.halfLines-move.item-active-delay .halfLines-elem-1 {
+.halfLines-move.item-active-middle .halfLines-elem-1 {
   stroke-dashoffset: 1767.8236083984375px;
   stroke-dasharray: 1767.8236083984375px;
   -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.5s;
           transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.5s;
 }
-.halfLines-move.item-active-delay.active .halfLines-elem-1 {
+.halfLines-move.item-active-middle.active .halfLines-elem-1 {
   stroke-dashoffset: 0;
 }
 
-.halfLines-move.item-active-delay .halfLines-elem-2 {
+.halfLines-move.item-active-middle .halfLines-elem-2 {
   stroke-dashoffset: 1767.8233642578125px;
   stroke-dasharray: 1767.8233642578125px;
   -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.5s;
           transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.5s;
 }
-.halfLines-move.item-active-delay.active .halfLines-elem-2 {
+.halfLines-move.item-active-middle.active .halfLines-elem-2 {
   stroke-dashoffset: 0;
 }
 
-.halfLines-move.item-active-delay .halfLines-elem-3 {
+.halfLines-move.item-active-middle .halfLines-elem-3 {
   stroke-dashoffset: 1290px;
   stroke-dasharray: 1290px;
   -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.3s;
           transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.3s;
 }
-.halfLines-move.item-active-delay.active .halfLines-elem-3 {
+.halfLines-move.item-active-middle.active .halfLines-elem-3 {
   stroke-dashoffset: 0;
 }
 

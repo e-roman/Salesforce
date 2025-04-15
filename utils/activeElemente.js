@@ -5,7 +5,6 @@ gsap.registerPlugin(ScrollTrigger);
 // Activa toggleClass "active" para .item-active
 export function activateElements() {
   const itemActiveAnim = document.querySelectorAll('.item-active');
-
   itemActiveAnim.forEach((itemActive) => {
     gsap.to(itemActive, {
       scrollTrigger: {
@@ -20,8 +19,7 @@ export function activateElements() {
 }
 
 export function activateElementsDelay() {
-  const itemActiveAnimDelay = document.querySelectorAll('.item-active-delay');
-
+  const itemActiveAnimDelay = document.querySelectorAll('.item-active-middle');
   itemActiveAnimDelay.forEach((itemDelay) => {
     gsap.to(itemDelay, {
       scrollTrigger: {
@@ -39,6 +37,7 @@ export function activateElementsDelay() {
 export function activateAnimations() {
   // fade skew
   document.querySelectorAll(".anim-skew").forEach((el) => {
+    const delay = parseFloat(el.dataset.delay) || 0;
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: el,
@@ -58,6 +57,7 @@ export function activateAnimations() {
 
   // fade in-up
   document.querySelectorAll(".anim-movUp").forEach((el) => {
+    const delay = parseFloat(el.dataset.delay) || 0;
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: el,
@@ -119,6 +119,7 @@ export function activateAnimations() {
 
   // fade in + move up
   document.querySelectorAll(".anim-fadeinUp").forEach((el) => {
+    const delay = parseFloat(el.dataset.delay) || 0;
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: el,
@@ -137,6 +138,7 @@ export function activateAnimations() {
 
   // fade in left
   document.querySelectorAll(".anim-fadeinLeft").forEach((el) => {
+    const delay = parseFloat(el.dataset.delay) || 0;
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: el,
@@ -155,6 +157,7 @@ export function activateAnimations() {
 
   // width expansion from left
   document.querySelectorAll(".anim-movLeft").forEach((el) => {
+    const delay = parseFloat(el.dataset.delay) || 0;
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: el,

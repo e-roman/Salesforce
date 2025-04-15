@@ -9,7 +9,7 @@ body.cs-transition .ptr-overlay {
     background-image: none;
 }
 body.cs-transition .ptr-overlay {
-    background-color: red;
+    background-color: black;
 }
 
 body.cs-transition .ptr-preloader {
@@ -18,9 +18,9 @@ body.cs-transition .ptr-preloader {
     left: 50%;
     width: 100%;
     height: 100%;
-    z-index: 2;
+    z-index: 9999;
     transform: translate(-50%, -50%);
-    background: violet;
+    background: #080808;
 }
 body.cs-transition .ptr-overlay {
     position: fixed;
@@ -28,8 +28,8 @@ body.cs-transition .ptr-overlay {
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: blue; /* o el color que quieras */
-    z-index: 1;
+    background-color: black; /* o el color que quieras */
+    z-index: 9999;
 }
 
 .loader__wrap {

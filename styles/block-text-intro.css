@@ -1,0 +1,15 @@
+.intro__title {
+    grid-area: title;
+    font-size: clamp(2rem, 3vw, 8rem);
+    font-weight: 400;
+    margin: 10vh 0;
+    line-height: 1;
+}
+
+.project--intro .block-textIntro {
+    max-width: 35vw;
+    margin: 3vh 5vw 0 auto;
+}
+.project--intro .block-textIntro p{
+    font-size: clamp(1rem, 2vw, 1.214rem);
+}
