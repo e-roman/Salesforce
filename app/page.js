@@ -5,9 +5,9 @@ import { initPreloader } from '@/utils/initPreloader';
 import { initSmoothScrolling } from '@/utils/smoothScroll';
 import { scroll } from '@/utils/scroll.js';
 import { preloadImages } from '@/utils/preloadImages';
-import { activateElements, activateElementsDelay, activateAnimations } from '@/utils/activeElemente';
+import { activateElements, activateElementsDelay, activateAnimations, activateZoomText } from '@/utils/activeElemente';
 import { initSplitText, initSplitLinesAnimations } from '@/utils/animateSplit';
-import { LoaderInit, SectionHero, SectionBlock1, SectionBlockReel, SectionBlockDf2u, HorizontalScrollDf2u, SectionBlockSlack, SectionBlockNightcap, SectionBlockMecedes, SectionBlockTableau, SectionBlockDotOrg } from './components';
+import { LoaderInit, SectionHero, SectionBlock1, SectionBlockReel, SectionBlockDf2u, HorizontalScrollDf2u, SectionBlockSlack, SectionBlockNightcap, SectionBlockMecedes, SectionBlockTableau, SectionBlockDotOrg, SectionBlockQuote } from './components';
 
 export default function Home() {
   useEffect(() => {
@@ -24,6 +24,7 @@ export default function Home() {
       activateElements();
       activateElementsDelay();
       activateAnimations();
+      activateZoomText();
       document.body.classList.remove('loading');
     });
   }, []);
@@ -41,6 +42,7 @@ export default function Home() {
       <SectionBlockMecedes/>
       <SectionBlockTableau/>*/}
       <SectionBlockDotOrg/>
+      <SectionBlockQuote/>
     </main>
   );
 }

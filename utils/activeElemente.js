@@ -173,3 +173,37 @@ export function activateAnimations() {
     });
   });
 }
+
+//  NUEVA ANIMACIÓN: zoom in para texto
+export function activateZoomText() {
+  const zoomText = document.querySelectorAll(".anim-zoom-text");
+
+  zoomText.forEach((el) => {
+    const delay = parseFloat(el.dataset.delay) || 0;
+    const container = el.closest("#text-out"); // Usamos el contenedor como trigger
+
+    gsap.fromTo(
+      el,
+      {
+        scale: 3,
+        autoAlpha: 0.1,
+      },
+      {
+        scale: 1,
+        autoAlpha: 1,
+        duration: 2,
+        ease: "none",
+        scrollTrigger: {
+          trigger: container || el, // fallback por si no encuentra el contenedor
+          start: "top center",
+          end: `+=${window.innerHeight * 1.3}`,
+          scrub: 1,
+          pin: true,
+          markers: false,
+        },
+        delay,
+        clearProps: "all",
+      }
+    );
+  });
+}

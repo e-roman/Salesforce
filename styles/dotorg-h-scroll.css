@@ -90,13 +90,18 @@ figure.sh3-content-2 {
     border: solid 2px #a9a9a9;
 }
 
-
-
 .scroll-hz3 .item.space {
     width: 458px;
 }
-@media all and (display-mode: fullscreen) {
-}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -113,6 +118,8 @@ figure.sh3-content-2 {
     left: 33.5vw;
     z-index: -1;
 }
+
+
 .dot-bg-cloud_1 {
     position: absolute;
     top: 25vh;
@@ -139,6 +146,8 @@ figure.sh3-content-2 {
 .dot-bg-cloud_3 svg {
     width: 100%;
 }
+
+
 .dot-bg-bird_1 {
     position: absolute;
     top: 24vh;
@@ -151,6 +160,29 @@ figure.sh3-content-2 {
     left: 35px;
     top: 42px;
 }
+
+
+
+.dot-bg-cloud_4 {
+    position: absolute;
+    top: 28vh;
+    left: 9vw;
+    z-index: 0;
+}
+.dot-bg-cloud_5 {
+    position: absolute;
+    top: 40vh;
+    left: 23vw;
+    z-index: 0;
+}
+.dot-bg-cloud_6 {
+    position: absolute;
+    top: 32vh;
+    left: 34vw;
+    z-index: 0;
+}
+
+
 
 #content-anim-bg {
     position: relative;
@@ -188,6 +220,7 @@ figure.sh3-content-2 {
 
 
 
+
 /****** CLOUD ****/
 @-webkit-keyframes animate-svg-stroke-cloud-1 {
     0% {
@@ -213,11 +246,13 @@ figure.sh3-content-2 {
     }
   }
   
-  .dot_top1_svg-1.item-active {
+  .cloud-init.item-active,
+  .cloud-init.anim-iz {
       opacity: 0;
   }
   
-  .dot_top1_svg-1.item-active.active {
+  .cloud-init.item-active.active,
+  .cloud-init.anim-iz.iz-active {
       opacity: 9;
     -webkit-animation: animate-svg-stroke-cloud-1 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both;
             animation: animate-svg-stroke-cloud-1 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both;
@@ -226,64 +261,10 @@ figure.sh3-content-2 {
   
   
 
-  .dot_bgBird_svg-1.item-active .anim-dot-right-1 {
-      opacity: 0;
-  }
-  .dot_bgBird_svg-1.item-active .anim-dot-right-1 {
-       opacity: 9;
-    stroke-dashoffset: 534.6998901367188px;
-    stroke-dasharray: 534.6998901367188px;
-    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s;
-            transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s;
-  }
-  
-  .dot_bgBird_svg-1.item-active.active .anim-dot-right-1 {
-    stroke-dashoffset: 1069.3997802734375px;
-  }
-  
-  
 
 
 
-/****** CLOUD ****/
-@-webkit-keyframes animate-svg-stroke-cloud-1 {
-  0% {
-    stroke-dashoffset: 358.36566162109375px;
-    stroke-dasharray: 358.36566162109375px;
-  }
-
-  100% {
-    stroke-dashoffset: 716.7313232421875px;
-    stroke-dasharray: 358.36566162109375px;
-  }
-}
-
-@keyframes animate-svg-stroke-cloud-1 {
-  0% {
-    stroke-dashoffset: 358.36566162109375px;
-    stroke-dasharray: 358.36566162109375px;
-  }
-
-  100% {
-    stroke-dashoffset: 716.7313232421875px;
-    stroke-dasharray: 358.36566162109375px;
-  }
-}
-
-.dot_top1_svg-1.item-active {
-    opacity: 0;
-}
-
-.dot_top1_svg-1.item-active.active {
-    opacity: 9;
-  -webkit-animation: animate-svg-stroke-cloud-1 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both;
-          animation: animate-svg-stroke-cloud-1 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both;
-}
-
-
-
-
-
+/****** Bird ****/
 .dot_bgBird_svg-1.item-active .anim-dot-right-1 {
     opacity: 0;
 }

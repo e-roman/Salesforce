@@ -44,6 +44,10 @@ export function SectionBlockDotOrg() {
               </div>
               <div className="item">
                 <figure className="sh3-content-2">
+                  <div className="dot-bg-cloud_4" id="cloud4"></div>
+                  <div className="dot-bg-cloud_5" id="cloud5"></div>
+                  <div className="dot-bg-cloud_6" id="cloud6"></div>
+
                   <div className="dot-tablet-2">
                     <div className="content-video">
                       <video
@@ -67,7 +71,7 @@ export function SectionBlockDotOrg() {
                   <div className="dot-bg-cloud_2" id="cloud2"></div>
                   <div className="dot-bg-cloud_3" id="cloud3"></div>
                   <div className="dot-bg-bird_1">
-                    <object
+                    <object 
                       data="content/dot-org/bird.svg"
                       className="anim-movZoomUp"
                       type="image/svg+xml"

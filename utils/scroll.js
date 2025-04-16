@@ -114,17 +114,7 @@ export const scroll = () => {
     { id: '#section-Mercedez' },
     { id: '#section-Tableau' },
     { id: '#section-DotOrg', type: 'horizontal' },
-
-    // { id: '#gallery-4' },
-    // { id: '#gallery-5' },
-    // { id: '#gallery-6' },
-    // { id: '#gallery-7' },
-    // {
-    //   id: '#gallery-8',
-    //   options: {
-    //     flip: { scale: false },
-    //   },
-    // },
+    { id: '#section-Quote' },
   ];
 
   galleries.forEach(({ id, options, type }) => {
