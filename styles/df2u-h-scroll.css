@@ -92,7 +92,7 @@
 
 /*SCORLL HORINZONTAL 1 > CONTENIDO*/
 .horizontal-section-1 .item:first-child {
-    margin-left: 49.55vw;
+    margin-left: 49.40vw;
 }
 .box-radius {
     overflow: hidden;
@@ -427,69 +427,7 @@ figure.content-8 img {
 
 
 
-/*ANIMATIONS*/
-.anim-initial.anim-horz-fadein {
-    opacity: 0;
-    transform: translateY(100px);
-}
-.anim-initial.anim-horz-fadein-2 {
-    opacity: 0;
-    transform: translateY(20px);
-}
-.anim-initial.anim-horz-zoom {
-    opacity: 0;
-    transform: scale(0.8);
-  }
 
-
-
-  :root {
-    --transition-1: all 1s ease;
-    --opactiy-1: 1;
-    --opactiy-0: 0;
-}
-
-.anim-iz {
-    opacity: var(--opactiy-0);
-    transition: var(--transition-1);
-}
-.anim-iz.iz-active {
-    opacity: var(--opactiy-1);
-}
-
-
-
-
-.an-zoomIn {
-    transition: var(--transition-1);
-    opacity: var(--opactiy-0);
-    transform: translate(0, 150px) scale(0.7);
-}
-.an-zoomIn.iz-active {
-    transform: translate(0, 0) scale(1)
-}
-
-.an-fadeInUp {
-    transform: translateY(100px);
-}
-.an-fadeInUp.iz-active {
-    transform: translateY(0);
-}
-
-.an-fadeInDown {
-    transform: translateY(-30px);
-}
-.an-fadeInDown.iz-active {
-    transform: translateY(30px);
-}
-
-
-.an-fadeInLeft {
-    transform: translateX(-50px);
-}
-.an-fadeInRight {
-    transform: translateX(50px);
-}
 
 
 

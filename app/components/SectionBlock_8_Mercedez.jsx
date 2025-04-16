@@ -35,7 +35,7 @@ export function SectionBlockMecedes() {
 
 
         <div className='content-bottom-mdz'>
-            <h2 className="title-section split-lines animate-scroll-each single-line not-split">Crafting relatable <br/>brand-audience<br/>connections.</h2>
+            <h2 className="font-h2 split-lines animate-scroll-each single-line not-split">Crafting relatable <br/>brand-audience<br/>connections.</h2>
 
             <div className="row-top">
               <div className="content-phones">
@@ -47,10 +47,10 @@ export function SectionBlockMecedes() {
                             <img src="content/mercedes-benz/date_2021.svg" className="anim-movZoom" alt="Salesforce"/>
                           </div>
                           <div className="rowspan-md">
-                              <h6 className="title-section font-h1 text-grey text-900 anim-fadeinUp">Mercedes-Benz Customer</h6>
-                          </div>
-                          <div className="rowspan-md">
-                              <h6 className="title-section font-h1 text-grey text-900 anim-fadeinUp">Success Experience</h6>
+                            <h4 className="font-h4 text-grey split-lines animate-scroll-each single-line not-split">
+                                Mercedes-Benz Customer<br/>
+                                Success Experience
+                            </h4>
                           </div>
                       </div>
                       <div className="anim-movUp">
@@ -59,7 +59,7 @@ export function SectionBlockMecedes() {
                   </div>
               </div>
               <div className="content-animation">
-                  <div className="item-animation item-car"><img src="content/mercedes-benz/car.webp" className="anim-movZoom" data-delay="0" alt="Salesforce"/></div>
+                  <div className="item-animation item-car"><img src="content/mercedes-benz/car.webp" alt="Salesforce"/></div>
                   <div className="item-animation item-mountains"><img src="content/mercedes-benz/mountains.svg" className="anim-movZoomUp" data-delay="0.5" alt="Salesforce"/></div>
                   <div className="item-animation item-clouds"><img src="content/mercedes-benz/clouds_1.svg" className="anim-movZoom" data-delay="0.6" alt="Salesforce"/></div>
                   <div className="item-animation item-bg"><img src="content/mercedes-benz/bg-animation.webp" className="anim-movZoom" data-delay="0.4" alt="Salesforce"/></div>

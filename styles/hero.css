@@ -66,11 +66,11 @@
 }
 
 .cover__title {
-    font-size: clamp(2rem, 5vw, 8rem);
-    font-family: 'helvetica_neue65_medium';
+    font-size: clamp(2rem, 6.5vw, 8rem);
+    font-family: var(--font-helvetica);
     margin: 0;
     text-align: center;
-    line-height: .55;
+    line-height: .6;
     padding-bottom: 1.514rem;
 }
 

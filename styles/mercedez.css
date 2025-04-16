@@ -17,7 +17,7 @@
   align-items: center;
   position: absolute;
   left: 12vw;
-  bottom: 13vh;
+  bottom: 14.5vh;
 }
 .partnerships-btm h4 {
     margin: 0 4rem 0 1rem;
@@ -31,10 +31,11 @@
 /*SECTION MERCEDEZ > Second*/
 
 .content-bottom-mdz {
-  padding-top: 6rem;
+  padding-top: 2rem;
 }
+
 .content-bottom-mdz h2 {
-  margin: 0 0 0 3vw;
+  margin: 0 0 0 9.514vw;
 }
 
 .row-top {
@@ -42,7 +43,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center bottom;
-    margin-top: 5rem;
+    margin-top: 10rem;
 }
 .content-phones {
     width:65vw;

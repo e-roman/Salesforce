@@ -29,7 +29,7 @@ export function SectionBlockDf2u() {
                reconnected<br/>
                with the people<br/>
                bringing<br/>
-               Dreamfoces<br/>
+               Dreamforces<br/>
                back home.
             </h3>
           </div>

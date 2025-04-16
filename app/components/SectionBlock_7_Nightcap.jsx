@@ -24,12 +24,12 @@ export function SectionBlockNightcap() {
             <div className="item">
                 <figure className="sh2-content-1">
                     <section className="project--intro--NightCap">
-                        <h2 className="title-section font-h2 text-grey text-center split-lines animate-scroll-each single-line not-split">Salesforce Nightcap<br/>World Economic Forum<br/>Davos Switzerland</h2>
+                        <h2 className="font-h3 text-grey split-lines animate-scroll-each single-line not-split">Salesforce Nightcap<br/>World Economic Forum<br/>Davos Switzerland</h2>
                     </section>
                     <div className="content-whales">
                         <div className="whales whale-1">
                             <div className="whale-move">
-                                <div id="whale-1 container">
+                                <div id="whale-1 container" className="anim-movZoomUp" data-delay="0.1">
                                     <Player
                                         src="content/whale.json"
                                         background="transparent"
@@ -40,12 +40,12 @@ export function SectionBlockNightcap() {
                                 </div>
                             </div>
                         </div>
-                        <div className="whales whale-2"><img src="content/whales/whale-02.png" alt="Salesforce"/></div>
-                        <div className="whales whale-3"><img src="content/whales/whale-03.svg" alt="Salesforce"/></div>
-                        <div className="whales whale-4"><img src="content/whales/whale-04.svg" alt="Salesforce"/></div>
+                        <div className="whales whale-2"><img src="content/whales/whale-02.png" alt="Salesforce" className="anim-movZoomUp" data-delay="0.5"/></div>
+                        <div className="whales whale-3"><img src="content/whales/whale-03.svg" alt="Salesforce" className="anim-movZoomUp" data-delay="0.7"/></div>
+                        <div className="whales whale-4"><img src="content/whales/whale-04.svg" alt="Salesforce" className="anim-movZoomUp" data-delay="0.9"/></div>
                         <div className="whales whale-5">
                             <div className="whale-move">
-                                <div id="whale-1 container">
+                                <div id="whale-1 container" className="anim-movZoomUp" data-delay="1">
                                     <Player
                                         src="content/whale-2.json"
                                         background="transparent"
@@ -56,9 +56,9 @@ export function SectionBlockNightcap() {
                                 </div>
                             </div>
                         </div>
-                        <div className="whales whale-6"><img src="content/whales/whale-06.svg" alt="Salesforce"/></div>
-                        <div className="whales whale-7"><img src="content/whales/whale-07.svg" alt="Salesforce"/></div>
-                        <div className="whales whale-8"><img src="content/whales/whale-08.svg" alt="Salesforce"/></div>
+                        <div className="whales whale-6"><img src="content/whales/whale-06.svg" alt="Salesforce" className="anim-iz an-fadeInDown"/></div>
+                        <div className="whales whale-7"><img src="content/whales/whale-07.svg" alt="Salesforce" className="anim-iz an-fadeInUp"/></div>
+                        <div className="whales whale-8"><img src="content/whales/whale-08.svg" alt="Salesforce" className="anim-iz an-fadeInLeft"/></div>
                     </div>
                     <div className="poster-1"><img src="content/whales/02.svg" alt="Salesforce"/></div>
                 </figure>

@@ -1,7 +1,14 @@
 /*SCORLL HORINZONTAL 3 > CONTENIDO*/
-section#section-Df2u-hScroll {
+section#section-DotOrg {
     position: relative;
 }
+
+.project--intro--DotOrg {
+    position: absolute;
+    top: -110px;
+    left: 3vw;
+}
+
 
 .scroll-hz3 {
     padding-bottom: 15rem;

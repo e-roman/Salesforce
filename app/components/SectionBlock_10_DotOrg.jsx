@@ -19,6 +19,9 @@ export function SectionBlockDotOrg() {
           <div className="pin-wrap">
             <div className="animation-wrap to-right">
               <div className="item">
+                  <section className="project--intro--DotOrg">
+                    <h2 className="font-h3 text-grey split-lines animate-scroll-each single-line not-split">Salesforce.org Education Summit<br/>& Nonprofit Summit<br/>Design Assets</h2>
+                  </section>
                 <figure className="sh3-content-1">
                   <div className="dot-tablet-1">
                     <div className="span-date">

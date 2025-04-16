@@ -22,10 +22,12 @@ export function initSplitText() {
 
 export function initSplitLinesAnimations() {
   // Para cada línea individual con animación
-  document.querySelectorAll('.split-lines.animate-scroll-each .line').forEach(line => {
+  const lines = document.querySelectorAll('.split-lines.animate-scroll-each .line');
+
+  lines.forEach((line, index) => {
     const target = line.querySelector('.single-line-inner');
     if (!target) return;
-
+  
     gsap.fromTo(target, {
       yPercent: 110,
       rotate: 0.001
@@ -34,6 +36,7 @@ export function initSplitLinesAnimations() {
       rotate: 0.001,
       ease: "primary-ease",
       duration: durationDefault,
+      delay: index * 0.1, // 👈 Aquí defines el delay progresivo (ajusta 0.1 a tu gusto)
       scrollTrigger: {
         trigger: line,
         start: "top 90%",
@@ -42,6 +45,7 @@ export function initSplitLinesAnimations() {
       }
     });
   });
+  
 
   // Para animaciones de bloque completo
   document.querySelectorAll('.split-lines.animate-scroll').forEach(block => {

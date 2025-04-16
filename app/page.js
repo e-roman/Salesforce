@@ -30,16 +30,16 @@ export default function Home() {
 
   return (
     <main className="main">
-      <LoaderInit />
+      {/* <LoaderInit />
       <SectionHero />
       <SectionBlock1 />
       <SectionBlockReel />
       <SectionBlockDf2u /> 
       <HorizontalScrollDf2u />
-      <SectionBlockSlack />
+      <SectionBlockSlack /> 
       <SectionBlockNightcap /> 
       <SectionBlockMecedes/>
-      <SectionBlockTableau/>
+      <SectionBlockTableau/>*/}
       <SectionBlockDotOrg/>
     </main>
   );
