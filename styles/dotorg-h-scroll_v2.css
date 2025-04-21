@@ -1,4 +1,5 @@
 /*SCORLL HORINZONTAL 3 > CONTENIDO*/
+
 section#section-DotOrg {
     position: relative;
 }
@@ -18,15 +19,18 @@ section#section-DotOrg {
 }
 
 
+.animation-wrap {
+    height: 100vh;
+}
 figure.sh3-content-1 {
     position: relative;
     width: 115vw;
-    margin-left: 30vw;
+    margin-left: 15vw;
     align-items: center;
 }
 figure.sh3-content-2 {
     position: relative;
-    width: 120vw;
+    width: 112vw;
 }
 
 .bg-dot {
@@ -38,14 +42,14 @@ figure.sh3-content-2 {
 }
 
 
-.dot-tablet-1 {
+.dot-screen-1 {
     position: absolute;
     right: 0;
     top: 22vh;
     width: 50vw;
     height: 66vh;
 }
-.dot-tablet-1 video {
+.dot-screen-1 video {
     max-width: 46vw;
     margin: auto;
     display: block;
@@ -64,20 +68,20 @@ figure.sh3-content-2 {
     height: 100%;
 }
 
-.dot-tablet-1 .span-date {
+.dot-screen-1 .span-date {
     position: absolute;
     top: -7rem;
     left: -4rem;
 }
 
-.dot-tablet-2 {
+.dot-screen-2 {
     position: absolute;
     right: 0;
     top: 5vh;
     width: 50vw;
     height: 66vh;
 }
-.dot-tablet-2 video {
+.dot-screen-2 video {
     max-width: 46vw;
     margin: auto;
     display: block;
@@ -90,11 +94,18 @@ figure.sh3-content-2 {
     border: solid 2px #a9a9a9;
 }
 
-
-
 .scroll-hz3 .item.space {
     width: 458px;
 }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -115,26 +126,26 @@ figure.sh3-content-2 {
 
 .dot-bg-cloud_1 {
     position: absolute;
-    top: 25vh;
-    left: 35vw;
+    top: 10vh;
+    left: -40vw;
     z-index: 0;
 }
 .dot-bg-cloud_2 {
     position: absolute;
-    top: 40vh;
-    left: 60vw;
+    top: 26vh;
+    left: -22vw;
     z-index: 0;
-    width: 90px;
+    width: 5vw;
 }
 .dot-bg-cloud_2 svg {
     width: 100%;
 }
 .dot-bg-cloud_3 {
     position: absolute;
-    top: 18vh;
-    left: 54vw;
+    top: 0vh;
+    left: -24vw;
     z-index: 0;
-    width: 120px;
+    width: 6vw;
 }
 .dot-bg-cloud_3 svg {
     width: 100%;
@@ -143,70 +154,72 @@ figure.sh3-content-2 {
 
 .dot-bg-bird_1 {
     position: absolute;
-    top: 24vh;
-    left: 64vw;
+    top: 12vh;
+    left: -12vw;
     z-index: 0;
-    width: 120px;
 }
 .dot-bg-bird_2 {
     position: absolute;
-    left: 35px;
-    top: 42px;
+    top: 5vh;
+    left: 1vw;
 }
+
 
 
 
 .dot-bg-cloud_4 {
     position: absolute;
     top: 28vh;
-    left: 10vw;
+    left: 9vw;
     z-index: 0;
-    width: 6vw;
 }
 .dot-bg-cloud_5 {
     position: absolute;
-    top: 45vh;
-    left: 24vw;
+    top: 40vh;
+    left: 23vw;
     z-index: 0;
-    width: 7vw;
 }
 .dot-bg-cloud_6 {
     position: absolute;
-    top: 25vh;
-    left: 40vw;
+    top: 32vh;
+    left: 34vw;
     z-index: 0;
-    width: 10vw;
 }
 
-.dot-bg-cloud_4 SVG, .dot-bg-cloud_5 SVG .dot-bg-cloud_6 SVG {
-    width: 100%;
-}
 
-#content-anim-bg {
-    position: relative;
-    height: 100vh;
-}
-#bg-line {
-    height: 100vh;
-    display: flex;
-    margin: auto;
-    align-items: center;
+.plant-1 {
+    position: absolute;
+    top: 0;
+    left: -6rem;
+    width: 350px;
 }
 
 .bg-dot_org {
-    opacity: 9;
+    opacity: 1;
     position: absolute;
     left: 0;
     right: 0;
-    margin-left: 4.5vw;
     z-index: -1;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
+#content-anim-bg {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content-bg {
+    height: 100%;
+}
+
 .bg-stick {
-    height: 90vh;
+    height: 100%;
     margin: auto;
     display: flex;
     align-items: center;
-    margin: 5vh 0;
 }
 
 
@@ -276,49 +289,6 @@ figure.sh3-content-2 {
 
 .dot_bgBird_svg-1.item-active.active .anim-dot-right-1 {
   stroke-dashoffset: 1069.3997802734375px;
-}
-
-
-
-
-
-@media (min-width: 2560px) and (max-height: 1600px) {
-    figure.sh3-content-1 {
-        width: 143vw;
-    }
-    figure.sh3-content-2 {
-        width: 165vw;
-    }
-}
-
-@media (min-width: 2560px) and (max-height: 1440px) {
-    figure.sh3-content-1 {
-        width: 130vw;
-    }
-}  
-    
-  
-  /* 3840x2160 – 4K UHD */
-  @media (min-width: 3840px) and (max-height: 2160px) {
-    figure.sh3-content-2 {
-        width: 165vw;
-    }
-  }
-
-  /* 3840x1600 – Ultrawide WQHD+ */
-@media (min-width: 3840px) and (max-height: 1600px) {
-    figure.sh3-content-2 {
-        width: 100vw;
-    }
-  }
-
-  @media screen and (min-width: 3440px) {
-    figure.sh3-content-1 {
-        width: 103vw;
-    }
-    figure.sh3-content-2 {
-        width: 110vw;
-    }
 }
 
 

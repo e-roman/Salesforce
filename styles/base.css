@@ -14,7 +14,7 @@
 	--color-text-alt: #575757;
 	--color-caption: #fff;
 	--font-helvetica: 'helvetica_neue65_medium';
-	--line-height: 1
+	--line-height-1: 1
 }
 
 body {
@@ -765,7 +765,7 @@ main {
     font-family: var(--font-helvetica);
 	line-height: var(--line-height-1);
 }
-.font-h4 {
+.font-h6{
     font-size: clamp(20px, 1.5vw, 3vw);
     font-family: var(--font-helvetica);
 	line-height: var(--line-height-1);

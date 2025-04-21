@@ -81,13 +81,12 @@ export function SectionBlockDotOrg() {
                   <div>
                     <object
                       className="bg-stick"
-                      data="content/dot-org/bg-stick.svg"
+                      data="content/dot-org/bg-Dotorg.svg"
                       type="image/svg+xml"
                     ></object>
                   </div>
                 </div>
               </div>
-              <div className="item space-vw"></div>
             </div>
           </div>
         </div>

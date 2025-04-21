@@ -29,14 +29,13 @@ export function initSplitLinesAnimations() {
     if (!target) return;
   
     gsap.fromTo(target, {
-      yPercent: 110,
-      rotate: 0.001
+      yPercent: 240,
+      rotate: 1.5
     }, {
       yPercent: 0,
-      rotate: 0.001,
+      rotate: 0,
       ease: "primary-ease",
       duration: durationDefault,
-      delay: index * 0.1, // 👈 Aquí defines el delay progresivo (ajusta 0.1 a tu gusto)
       scrollTrigger: {
         trigger: line,
         start: "top 90%",

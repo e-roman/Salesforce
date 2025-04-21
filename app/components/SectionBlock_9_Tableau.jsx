@@ -11,7 +11,7 @@ export function SectionBlockTableau() {
         <section className="boxdate-2022">
           <div className="d-flex-center">
               <div><img src="content/wow-tableau/date-2022.svg" className="h-100 anim-movZoom" alt="Salesforce"/></div>
-              <h4 className="font-h4 text-grey h-100 anim-skew">Tableau Conference Game Show<br/> Design &amp; Animation Assets</h4>
+              <h4 className="font-h6 text-grey h-100 anim-skew">Tableau Conference Game Show<br/> Design &amp; Animation Assets</h4>
           </div>
         </section>
         <div className="gallery-wrap gallery-wrap--large">

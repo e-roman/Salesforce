@@ -47,7 +47,7 @@ export function SectionBlockMecedes() {
                             <img src="content/mercedes-benz/date_2021.svg" className="anim-movZoom" alt="Salesforce"/>
                           </div>
                           <div className="rowspan-md">
-                            <h4 className="font-h4 text-grey split-lines animate-scroll-each single-line not-split">
+                            <h4 className="font-h6 text-grey split-lines animate-scroll-each single-line not-split">
                                 Mercedes-Benz Customer<br/>
                                 Success Experience
                             </h4>
@@ -61,7 +61,7 @@ export function SectionBlockMecedes() {
               <div className="content-animation">
                   <div className="item-animation item-car"><img src="content/mercedes-benz/car.webp" alt="Salesforce"/></div>
                   <div className="item-animation item-mountains"><img src="content/mercedes-benz/mountains.svg" className="anim-movZoomUp" data-delay="0.5" alt="Salesforce"/></div>
-                  <div className="item-animation item-clouds"><img src="content/mercedes-benz/clouds_1.svg" className="anim-movZoom" data-delay="0.6" alt="Salesforce"/></div>
+                  <div className="item-animation item-clouds"><img src="content/mercedes-benz/clouds_1.svg" className="anim-movZoomUp" data-delay="0.6" alt="Salesforce"/></div>
                   <div className="item-animation item-bg"><img src="content/mercedes-benz/bg-animation.webp" className="anim-movZoom" data-delay="0.4" alt="Salesforce"/></div>
               </div>
             </div>

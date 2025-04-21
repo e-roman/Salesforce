@@ -1,6 +1,9 @@
 /*SECTION MERCEDEZ > First*/
-#mercedesSection {
+section#section-Mercedez {
+  padding-top: 20rem;
 }
+
+
 
 .content-top-mdz {
     padding: 0 0 10rem 0;

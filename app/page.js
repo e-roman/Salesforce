@@ -31,7 +31,7 @@ export default function Home() {
 
   return (
     <main className="main">
-      {/* <LoaderInit />
+      <LoaderInit />
       <SectionHero />
       <SectionBlock1 />
       <SectionBlockReel />
@@ -40,7 +40,7 @@ export default function Home() {
       <SectionBlockSlack /> 
       <SectionBlockNightcap /> 
       <SectionBlockMecedes/>
-      <SectionBlockTableau/>*/}
+      <SectionBlockTableau/>
       <SectionBlockDotOrg/>
       <SectionBlockQuote/>
     </main>
