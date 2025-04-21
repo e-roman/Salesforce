@@ -12,7 +12,6 @@ export function LoaderInit() {
             <div className="ptr-preloader">
                 <div className="loader__wrap">
                     <div className="logo-salesforce"><img src="content/hero/logo-salesforce.svg" width="100%"/></div>
-                    <div className="loader__logo"><h1>Salesforce</h1></div>
                 </div>
             </div>
       </div>

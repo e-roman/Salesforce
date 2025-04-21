@@ -81,7 +81,7 @@ export function SectionBlockDotOrg() {
                   <div>
                     <object
                       className="bg-stick"
-                      data="content/dot-org/bg-Dotorg.svg"
+                      data="content/dot-org/bg-DotOrg.svg"
                       type="image/svg+xml"
                     ></object>
                   </div>
