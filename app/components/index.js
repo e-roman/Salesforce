@@ -9,4 +9,4 @@ export { SectionBlockNightcap } from './SectionBlock_7_Nightcap';
 export { SectionBlockMecedes } from './SectionBlock_8_Mercedez';
 export { SectionBlockTableau } from './SectionBlock_9_Tableau';
 export { SectionBlockDotOrg } from './SectionBlock_10_DotOrg';
-export { SectionBlockQuote } from './Section_11_Quote';
+export { SectionBlockQuote } from './SectionBlock_11_Quote';

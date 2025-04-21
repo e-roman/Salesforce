@@ -66,10 +66,10 @@
     transform: none !important;
 }
 .gallery__item.circle-left svg, .gallery__item.circle-right svg {
-    width: 100%;
-    margin: 35px auto 0 auto;
-    display: block;
-    transform: scale(1.25, 1.25) !important;
+  width: 100%;
+  margin: 3.814vh auto 0 auto;
+  display: block;
+  transform: scale(1.25, 1.25) !important;
 }
 .gallery--gridCircles .gallery__item.circle-center svg {
 	width: 100%;
