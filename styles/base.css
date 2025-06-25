@@ -297,12 +297,15 @@ main {
 }
 
 .gallery--grid {
-	height: auto;
-	display: grid;
-	grid-template-columns: repeat(3,auto);
-	grid-template-rows: repeat(3,auto);
-	row-gap: 1vw;
-	column-gap: 1vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-row-gap: 1vw;
+    row-gap: 1vw;
+    grid-column-gap: 1vw;
+    column-gap: 1vw;
+    overflow: hidden;
 }
 
 .gallery--grid .gallery__item {
