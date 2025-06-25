@@ -22,3 +22,10 @@
   align-items: center;
   gap: 55px;
 }
+
+
+.gallery__item-inner video {
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+}

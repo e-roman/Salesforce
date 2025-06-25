@@ -1,7 +1,6 @@
 
 
 
-
 /*SCROLL HORIZONTAL*/
 .horizontal-scroll {
     overflow: hidden;
@@ -399,7 +398,7 @@ figure.content-8 img {
     height: 150%;
     display: inline-block;
     left: -2px;
-    top: -48vh;
+    top: -44vh;
     background-color: #FFF;
     opacity: .8;
     position: absolute;
