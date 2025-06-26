@@ -77,6 +77,11 @@ section#section-Mercedez {
     top: -69px;
     display: flex;
 }
+@media screen and (max-width: 1280px) {
+	.dete-2021 {
+		width: 460px;
+	}
+}
 .dete-2021 .line-v_2021 {
     width: 85%;
 }

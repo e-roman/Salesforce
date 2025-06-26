@@ -128,7 +128,7 @@ h3.split-lines .line:nth-child(2) {
 }
 
 
-@media screen and (min-width: 1280px) {
+@media screen and (max-width: 1280px) {
   h3.split-lines .line:first-child {
     margin-bottom: -1.5rem;
   }

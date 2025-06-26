@@ -8,9 +8,15 @@
 }
 
 .project--intro .block-textIntro {
-    max-width: 35vw;
+    max-width: 28vw;
     margin: 3vh 5vw 0 auto;
 }
 .project--intro .block-textIntro p{
     font-size: clamp(1rem, 2vw, 1.214rem);
+}
+
+@media screen and (max-width: 1280px) {
+    .project--intro .block-textIntro {
+        max-width: 40vw;
+    }
 }

@@ -9,10 +9,10 @@
     position: relative;
 }
 .grid-hero {
-	position: relative;
-	width: 100%;
-	display: grid;
-	grid-template-columns: repeat(6, 1fr);
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    height: 100vh;
 }
 
 .grid-hero .grid__item {
@@ -75,7 +75,7 @@
     padding-bottom: 1.514rem;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (max-width: 1280px) {
 	.cover__title {
 		padding-bottom: 0;
 	}

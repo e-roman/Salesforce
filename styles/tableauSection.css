@@ -23,7 +23,7 @@
   gap: 55px;
 }
 
-@media (min-width: 1280px) {
+@media (max-width: 1280px) {
     .boxdate-2022 {
            max-width: 52%;
     }

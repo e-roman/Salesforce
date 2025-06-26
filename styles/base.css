@@ -313,9 +313,12 @@ main {
 	width: 33vw;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (max-width: 1280px) {
 	.gallery--grid .gallery__item {
 		height: 30vh;
+	}
+	.gallery--row .caption {
+		max-width: 500px;
 	}
 }
 
