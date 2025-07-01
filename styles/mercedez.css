@@ -397,9 +397,9 @@ svg.circles-mdbz.item-active .svg-elem-13 {
   stroke-dashoffset: 53.53066635131836px;
   stroke-dasharray: 53.53066635131836px;
   fill: transparent;
-  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.44s,
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1s,
                         fill 0.5s ease 4.3s;
-          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.44s,
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1s,
                 fill 0.5s ease 4.3s;
 }
 

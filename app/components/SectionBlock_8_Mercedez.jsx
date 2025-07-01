@@ -74,7 +74,7 @@ export function SectionBlockMecedes() {
                     </div>
                     <div className="row-image">
                         <div className="d-block-image-1">
-                            <div className="block-image"><img src="content/mercedes-benz/block-image.webp" className="anim-fadeinUp" alt="Salesforce"/></div>
+                            <div className="block-image"><img src="content/mercedes-benz/block-image.webp" className="anim-fadein" alt="Salesforce"/></div>
                         </div>
                     </div>
                     
