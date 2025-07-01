@@ -34,6 +34,8 @@ export function initSplitLinesAnimations() {
     }, {
       yPercent: 0,
       rotate: 0,
+      duration: 2,
+      stagger: 0.09,
       ease: "primary-ease",
       duration: durationDefault,
       scrollTrigger: {

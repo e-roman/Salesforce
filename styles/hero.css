@@ -1,4 +1,6 @@
-
+/* html {
+    overflow: hidden;
+} */
 :root {
 	--align-end: flex-end;
 	--align-start: flex-start; 

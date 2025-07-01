@@ -34,7 +34,7 @@ export function initPreloader() {
 
     if ($(".img-zoom").length) {
       tl_transitOut.from(".img-zoom", {
-        duration: 0.4,
+        duration: 1.2,
         autoAlpha: 0,
         scale: 0.4,
         stagger: 0.1,
