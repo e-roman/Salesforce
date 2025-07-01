@@ -1,4 +1,5 @@
 export { LoaderInit } from './LoaderInit';
+export { SectionBlockMobile } from './SectionBlock_Responsive';
 export { SectionHero } from './SectionBlock_1_Hero';
 export { SectionBlock1 } from './SectionBlock_2_Text';
 export { SectionBlockReel } from './SectionBlock_3_Reel';

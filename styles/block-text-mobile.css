@@ -1,0 +1,26 @@
+
+.project--intro-mobile {
+    height: 100vh;
+    padding: 0 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.project--intro-mobile .logo-salesforce {
+    width: 100px;
+}
+.intro__title-mobile {
+    grid-area: title;
+    font-family: var(--font-helvetica);
+    font-size: clamp(2.214rem, 3vw, 8rem);
+    line-height: 1;
+    width: 100%;
+}
+
+.project--intro .block-textIntro p{
+    font-size: clamp(1rem, 2vw, 1.214rem);
+}
+
